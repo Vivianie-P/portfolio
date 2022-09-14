@@ -4,8 +4,13 @@
 	box-sizing: border-box;
 }
 
-.header {
+.mobile-header {
 	color: black;
+	display: flex;
+}
+
+.mobile-menu-items {
+	list-style: none;
 }
 
 .header-title {
@@ -14,8 +19,4 @@
 
 .hamburger {
 	color: red;
-}
-
-.header-container {
-	background-color: black;
 }

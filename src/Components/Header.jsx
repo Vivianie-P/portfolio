@@ -11,11 +11,11 @@ const Header = () => {
 	const showSidebar = () => setSidebar(!sidebar);
 
 	return (
-		<>
-			<div className="header">
+		<div>
+			<div className="mobile-header">
 				<h2 className="header-title">Vivianie Price</h2>
-				<nav className="desktop-header">
-					<ul className="menu-items">
+				<nav className="mobile-nav">
+					<ul className="mobile-menu-items">
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
@@ -46,7 +46,7 @@ const Header = () => {
 					</ul>
 				</nav>
 			</div>
-		</>
+		</div>
 	);
 };
 
