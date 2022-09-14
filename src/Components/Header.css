@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.header {
+	color: black;
+}
+
+.header-title {
+	color: red;
+}
+
+.hamburger {
+	color: red;
+}
+
+.header-container {
+	background-color: black;
+}
