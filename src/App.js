@@ -13,12 +13,14 @@ function App() {
 			<div className="main">
 				<Router>
 					<div className="main-header">
+						<h2 className="header-title">VP</h2>
 						<Header />
 					</div>
 					<Routes>
 						<Route path="about-me" element={<AboutMe />}></Route>
 					</Routes>
 				</Router>
+				<AboutMe />
 			</div>
 		</div>
 	);

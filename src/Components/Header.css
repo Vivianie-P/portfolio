@@ -1,22 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap");
+
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
+.desktop-header {
+	display: none;
+}
+
 .mobile-header {
-	color: black;
+	width: 100%;
 	display: flex;
+	justify-content: flex-end;
 }
 
-.mobile-menu-items {
-	list-style: none;
+.mobile-nav {
+	background-color: rgb(102, 102, 187);
 }
 
-.header-title {
-	color: red;
+.menu-items {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+.nav-link a {
+	text-decoration: none;
 }
 
 .hamburger {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 1rem;
+	font-size: 2rem;
+	background: none;
 	color: red;
+}
+
+@media screen and (min-width: 600px) {
 }

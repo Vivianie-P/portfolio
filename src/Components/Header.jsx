@@ -12,10 +12,9 @@ const Header = () => {
 
 	return (
 		<div>
-			<div className="mobile-header">
-				<h2 className="header-title">Vivianie Price</h2>
-				<nav className="mobile-nav">
-					<ul className="mobile-menu-items">
+			<div className="desktop-header">
+				<nav className="desktop-nav">
+					<ul className="menu-items">
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
@@ -27,11 +26,11 @@ const Header = () => {
 						})}
 					</ul>
 				</nav>
-				<Link to="#" className="hamburger">
-					<FontAwesomeIcon icon={faBars} onClick={showSidebar} />
-				</Link>
 			</div>
-			<div className="header-container">
+			<div className="hamburger">
+				<FontAwesomeIcon icon={faBars} onClick={showSidebar} />
+			</div>
+			<div className="mobile-header">
 				<nav className={sidebar ? "menu-items active" : "menu-items"}>
 					<ul className="menu-items">
 						{HeaderData.map((item, index) => {
