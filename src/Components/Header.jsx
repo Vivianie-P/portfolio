@@ -27,12 +27,12 @@ const Header = () => {
 					</ul>
 				</nav>
 			</div>
-			<div className="hamburger">
+			<Link to="#" className="hamburger">
 				<FontAwesomeIcon icon={faBars} onClick={showSidebar} />
-			</div>
-			<div className="mobile-header">
-				<nav className={sidebar ? "menu-items active" : "menu-items"}>
-					<ul className="menu-items">
+			</Link>
+			<div className={sidebar ? "mobile-header-on" : "mobile-header-off"}>
+				<nav className={"menu-items"}>
+					<ul className="menu-items-list">
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
