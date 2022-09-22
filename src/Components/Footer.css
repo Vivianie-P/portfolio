@@ -1,0 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.quick-links {
+	color: rgb(0, 42, 80);
+}

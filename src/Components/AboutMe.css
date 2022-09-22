@@ -1,0 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.aboutme-main {
+	color: rgb(0, 42, 80);
+}
