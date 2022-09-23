@@ -6,11 +6,16 @@
 
 .App {
 	width: 100vw;
-	background-color: rgb(71, 123, 168);
+	background-color: black;
 }
 
 .main-header {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
 }
