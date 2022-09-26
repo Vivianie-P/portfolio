@@ -13,7 +13,7 @@ function App() {
 			<div className="main">
 				<Router>
 					<div className="main-header">
-						<img src={require("./VP.jpg")} alt="" className="logo" />
+						<h1 className="logo">VP</h1>
 						<Header />
 					</div>
 					<Routes>

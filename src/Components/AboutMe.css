@@ -5,5 +5,23 @@
 }
 
 .aboutme-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
 	color: rgb(71, 123, 168);
+}
+
+.aboutme-title {
+	text-align: center;
+	color: #f1e8db;
+	font-size: 50px;
+}
+
+.aboutme-ppg {
+	font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
 }

@@ -4,7 +4,19 @@
 	box-sizing: border-box;
 }
 
-.contact-btn {
-	background-color: rgb(71, 123, 168);
-	color: white;
+.mailto {
+	color: rgb(71, 123, 168);
+	display: flex;
+	border: 1px solid;
+	font-size: 2rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.mailto:hover {
+	color: #f1e8db;
+	transform: scale(1.04);
+}
+
+@media screen and (min-width: 600px) {
 }

@@ -3,9 +3,9 @@ import "./ContactMe.css";
 
 function ContactMe() {
 	return (
-		<div className="contact-me-container">
-			<button className="contact-btn">CONTACT ME!</button>
-		</div>
+		<a className="mailto" href="mailto:vivianieprice@gmail.com">
+			Contact Me
+		</a>
 	);
 }
 
