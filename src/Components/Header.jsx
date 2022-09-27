@@ -3,7 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { HeaderData } from "./HeaderData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
 	const [sidebar, setSidebar] = useState(false);
@@ -28,7 +28,7 @@ const Header = () => {
 				</nav>
 			</div>
 			<Link to="#" className="hamburger">
-				<FontAwesomeIcon icon={faBars} onClick={showSidebar} />
+				<FontAwesomeIcon icon={faBarsStaggered} onClick={showSidebar} />
 			</Link>
 			<div className={sidebar ? "mobile-header-on" : "mobile-header-off"}>
 				<nav className={"menu-items"}>

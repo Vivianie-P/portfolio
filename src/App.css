@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
+
 *,
 *::before,
 *::after {
@@ -14,10 +16,17 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	padding: 1rem 1rem 0;
 }
 
 .logo {
 	color: rgb(71, 123, 168);
 	height: 50px;
 	width: 50px;
+	margin: 0;
+}
+
+.logo:hover {
+	cursor: pointer;
+	transform: scale(1.2);
 }

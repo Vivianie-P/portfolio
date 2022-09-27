@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
 *,
 *::before,
 *::after {
@@ -11,9 +10,16 @@
 }
 
 .mobile-header-on {
-	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	top: 6%;
+	left: 8%;
+	border-radius: 8%;
+	width: 85%;
+	height: 11rem;
+	background-color: #f1e8db;
 }
 
 .mobile-header-off {
@@ -24,16 +30,18 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 	text-align: center;
 	width: 100%;
 	list-style-type: none;
 	font-family: "Saira Condensed", sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .menu-items-list {
+	font-size: 1.3rem;
 	list-style: none;
+	padding: 0;
 }
 
 .nav-link a {
@@ -41,10 +49,17 @@
 	color: rgb(71, 123, 168);
 }
 
+.nav-link a:hover {
+	color: black;
+}
+
+.nav-link:hover {
+	transform: scale(1.1);
+}
+
 .hamburger {
 	display: flex;
 	justify-content: flex-end;
-	margin-left: 1rem;
 	font-size: 2rem;
 	background: none;
 	color: rgb(71, 123, 168);

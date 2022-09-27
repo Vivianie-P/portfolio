@@ -12,7 +12,7 @@ export const HeaderData = [
 	{
 		title: "Skills",
 		path: "/skills",
-		cName: "nav-text",
+		cName: "nav-link",
 	},
 	{
 		title: "Contact Me",

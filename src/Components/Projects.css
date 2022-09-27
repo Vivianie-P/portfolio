@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
+
 *,
 *::before,
 *::after {
@@ -47,6 +49,7 @@
 }
 
 .card__btn:hover {
+	cursor: pointer;
 	background-color: #f1e8db;
 }
 
