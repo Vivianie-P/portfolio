@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -14,6 +13,8 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 4rem;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
 }
 
 .mailto:hover {

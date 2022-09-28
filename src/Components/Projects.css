@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -30,10 +29,14 @@
 
 .card__title {
 	padding: 1rem;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
 }
 
 .card__description {
 	padding: 0 1rem;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
 }
 
 .card__btn {
@@ -42,6 +45,8 @@
 	margin: 1rem;
 	background-color: #477ba8;
 	transition: 200ms ease-in color 200ms ease-in;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
 }
 
 .card:hover {

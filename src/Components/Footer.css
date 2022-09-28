@@ -6,8 +6,24 @@
 	box-sizing: border-box;
 }
 
-.quick-links {
-	color: rgb(71, 123, 168);
+.footer-container {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.cv-svg,
+.github-svg,
+.linkedin-svg {
+	height: 3rem;
+}
+
+.cv-svg:hover,
+.github-svg:hover,
+.linkedin-svg:hover {
+	fill: #f1e8db;
+	transform: scale(1.1);
 }
 
 @media screen and (min-width: 600px) {
