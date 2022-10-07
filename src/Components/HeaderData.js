@@ -16,7 +16,7 @@ export const HeaderData = [
 	},
 	{
 		title: "Contact Me",
-		path: "/contact Me",
+		path: "/contact-me",
 		cName: "nav-link",
 	},
 ];

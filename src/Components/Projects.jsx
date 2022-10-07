@@ -4,6 +4,7 @@ import "./Projects.css";
 const Projects = () => {
 	return (
 		<div className="projects-container">
+			<h1 className="projects-title">Projects</h1>
 			<Card
 				title="URL Shortener App"
 				description="This project is a URL shortening app that takes in the user's external URL link and shortens the link."

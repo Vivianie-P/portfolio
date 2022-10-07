@@ -12,15 +12,28 @@
 	color: rgb(71, 123, 168);
 }
 
+.projects-title {
+	margin: 0 auto;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
+	color: #f1e8db;
+}
+
 .card {
 	overflow: hidden;
-	box-shadow: 0 2px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	cursor: pointer;
 	transition: 200ms ease-in;
+	width: 100%;
+	border: 1px solid #477ba8;
 }
+
+.card:hover {
+	box-shadow: 0 2px 20px;
+}
+
 .card__image {
 	height: 12rem;
 	width: 100%;
@@ -37,6 +50,10 @@
 	padding: 0 1rem;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 500;
+}
+
+.card__image {
+	width: 100%;
 }
 
 .card__btn {
