@@ -3,7 +3,7 @@ import "./Projects.css";
 
 const Projects = () => {
 	return (
-		<div className="projects-container">
+		<div className="projects-container" id="projects">
 			<h1 className="projects-title">Projects</h1>
 			<Card
 				title="URL Shortener App"

@@ -10,6 +10,8 @@ const Header = () => {
 
 	const showSidebar = () => setSidebar(!sidebar);
 
+	const closeMenu = () => setSidebar(false);
+
 	return (
 		<div>
 			<div className="desktop-header">
@@ -18,7 +20,7 @@ const Header = () => {
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
-									<Link to={item.path}>
+									<Link to={item.path} onClick={closeMenu}>
 										<span>{item.title}</span>
 									</Link>
 								</li>
@@ -36,7 +38,7 @@ const Header = () => {
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
-									<Link to={item.path}>
+									<Link to={item.path} onClick={closeMenu}>
 										<span>{item.title}</span>
 									</Link>
 								</li>

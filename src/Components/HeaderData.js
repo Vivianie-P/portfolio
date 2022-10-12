@@ -5,18 +5,18 @@ export const HeaderData = [
 		cName: "nav-link",
 	},
 	{
-		title: "Projects",
-		path: "/projects",
+		title: "Skills",
+		path: "#skills",
 		cName: "nav-link",
 	},
 	{
-		title: "Skills",
-		path: "/skills",
+		title: "Projects",
+		path: "#projects",
 		cName: "nav-link",
 	},
 	{
 		title: "Contact Me",
-		path: "/contact-me",
+		path: "#contact-me",
 		cName: "nav-link",
 	},
 ];
