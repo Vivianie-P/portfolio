@@ -3,13 +3,15 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { HeaderData } from "./HeaderData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
+import {
+	faBarsStaggered,
+	faMoon,
+	faSun,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
 	const [sidebar, setSidebar] = useState(false);
-
 	const showSidebar = () => setSidebar(!sidebar);
-
 	const closeMenu = () => setSidebar(false);
 
 	return (
@@ -33,12 +35,13 @@ const Header = () => {
 				<FontAwesomeIcon icon={faBarsStaggered} onClick={showSidebar} />
 			</Link>
 			<div className={sidebar ? "mobile-header-on" : "mobile-header-off"}>
-				<nav className={"menu-items"}>
+				<nav className="menu-items">
 					<ul className="menu-items-list">
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
 									<Link to={item.path} onClick={closeMenu}>
+										{item.icon}
 										<span>{item.title}</span>
 									</Link>
 								</li>

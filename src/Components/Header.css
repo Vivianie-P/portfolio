@@ -65,5 +65,13 @@
 	color: rgb(71, 123, 168);
 }
 
+.light-dark {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 2rem;
+	background: none;
+	color: rgb(71, 123, 168);
+}
+
 @media screen and (min-width: 600px) {
 }

@@ -6,17 +6,17 @@ export const HeaderData = [
 	},
 	{
 		title: "Skills",
-		path: "#skills",
+		path: "/skills",
 		cName: "nav-link",
 	},
 	{
 		title: "Projects",
-		path: "#projects",
+		path: "/projects",
 		cName: "nav-link",
 	},
 	{
 		title: "Contact Me",
-		path: "#contact-me",
+		path: "/contact-me",
 		cName: "nav-link",
 	},
 ];
