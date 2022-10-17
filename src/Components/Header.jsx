@@ -9,7 +9,7 @@ import {
 	faSun,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+const Header = (props) => {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
 	const closeMenu = () => setSidebar(false);
@@ -48,6 +48,13 @@ const Header = () => {
 							);
 						})}
 					</ul>
+					<button onClick={() => props.themeToggler()}>
+						{props.theme === "light" ? (
+							<FontAwesomeIcon icon={faMoon} className="light-dark" />
+						) : (
+							<FontAwesomeIcon icon={faSun} className="light-dark" />
+						)}
+					</button>
 				</nav>
 			</div>
 		</div>

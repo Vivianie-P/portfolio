@@ -1,7 +1,5 @@
 import "./App.css";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./Components/themes.js";
 import Header from "./Components/Header.jsx";
@@ -16,6 +14,7 @@ function App() {
 	const [theme, setTheme] = useState("dark");
 	const themeToggler = () => {
 		theme === "dark" ? setTheme("light") : setTheme("dark");
+		console.log(theme);
 	};
 
 	return (
@@ -26,12 +25,11 @@ function App() {
 					<Router>
 						<div className="main-header">
 							<h1 className="logo">VP</h1>
-							<button onClick={() => themeToggler()}>Change Theme</button>
-							<Header />
+							<Header theme={theme} setTheme={setTheme} themeToggler={themeToggler} />
 						</div>
 						<Routes>
 							<Route exact path="/about-me" component={<AboutMe />}></Route>
-							<Route path="/projects" component={<Projects />} />
+							<Route path="/projects" element={<Projects />} />
 						</Routes>
 					</Router>
 					<AboutMe />

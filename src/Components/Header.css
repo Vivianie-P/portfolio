@@ -42,6 +42,7 @@
 	font-size: 1.3rem;
 	list-style: none;
 	padding: 0;
+	margin: 0;
 }
 
 .nav-link a {
@@ -67,9 +68,9 @@
 
 .light-dark {
 	display: flex;
-	justify-content: flex-end;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	background: none;
+	border: none;
 	color: rgb(71, 123, 168);
 }
 
