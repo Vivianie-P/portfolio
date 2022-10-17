@@ -5,16 +5,51 @@
 	box-sizing: border-box;
 }
 
-.mailto {
+.contact-me-container {
+	margin-top: 3rem;
+	width: 100%;
+}
+
+.contact-me-title {
 	color: rgb(71, 123, 168);
+	margin: 0;
 	display: flex;
-	border: 1px solid;
-	font-size: 2rem;
 	justify-content: center;
-	align-items: center;
-	margin-top: 4rem;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+.inner-container {
+	display: flex;
+	color: rgb(71, 123, 168);
+	font-size: 1rem;
+	justify-content: center;
+	border: 1px solid white;
+	flex-direction: column;
+	width: 88%;
+	margin: 0 auto;
+}
+
+.subtitle {
+	display: flex;
+	justify-content: center;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
+}
+
+.mailto {
+	background-color: rgb(71, 123, 168);
+	color: #f1e8db;
+	width: 50%;
+	display: flex;
+	text-decoration: none;
+	font-size: 2rem;
+	justify-content: center;
+	margin: 0 auto;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
+	margin-bottom: 1rem;
 }
 
 .mailto:hover {

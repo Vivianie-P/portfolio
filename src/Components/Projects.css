@@ -7,9 +7,11 @@
 
 .projects-container {
 	display: grid;
-	gap: 5rem;
+	gap: 1rem;
 	justify-content: center;
 	color: rgb(71, 123, 168);
+	width: 88%;
+	margin: 0 auto;
 }
 
 .projects-title {
