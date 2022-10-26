@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 
-.aboutme-main {
+.home-main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,21 +15,22 @@
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 600;
 	scroll-snap-align: start;
-	height: 50vh;
+	height: 30vh;
 }
 
-.aboutme-title {
+.home-title {
 	text-align: center;
 	color: #f1e8db;
 	font-size: 50px;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 700;
+	margin: 0;
 }
 
-.aboutme-ppg {
+.home-ppg {
+	font-size: 30px;
 	padding: 0 2rem 2rem;
 	margin: 0;
-	font-size: 30px;
 }
 
 @media screen and (min-width: 600px) {

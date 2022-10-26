@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./Components/themes.js";
 import Header from "./Components/Header.jsx";
+import Home from "./Components/Home.jsx";
 import AboutMe from "./Components/AboutMe.jsx";
 import Skills from "./Components/Skills.jsx";
 import Projects from "./Components/Projects.jsx";
@@ -32,6 +33,7 @@ function App() {
 							<Route path="/projects" element={<Projects />} />
 						</Routes>
 					</Router>
+					<Home />
 					<AboutMe />
 					<Skills />
 					<Projects />

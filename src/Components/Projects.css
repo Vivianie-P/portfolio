@@ -4,9 +4,20 @@
 *::after {
 	box-sizing: border-box;
 }
+.projects-main {
+	scroll-snap-align: start;
+}
+
+.projects-title {
+	text-align: center;
+	color: #f1e8db;
+	font-size: 50px;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 700;
+	margin: 0;
+}
 
 .projects-container {
-	scroll-snap-align: start;
 	display: grid;
 	gap: 1rem;
 	justify-content: center;
@@ -14,13 +25,6 @@
 	width: 88%;
 	margin: 0 auto;
 	height: 140vh;
-}
-
-.projects-title {
-	margin: 0 auto;
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 500;
-	color: #f1e8db;
 }
 
 .card {
