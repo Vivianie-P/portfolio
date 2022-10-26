@@ -48,7 +48,7 @@ const Header = (props) => {
 							);
 						})}
 					</ul>
-					<button onClick={() => props.themeToggler()}>
+					<button className="light-dark" onClick={() => props.themeToggler()}>
 						{props.theme === "light" ? (
 							<FontAwesomeIcon icon={faMoon} className="light-dark" />
 						) : (

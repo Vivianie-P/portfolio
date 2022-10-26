@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 export const lightTheme = {
 	body: "#f1e8db",

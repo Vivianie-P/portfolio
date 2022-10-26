@@ -6,12 +6,14 @@
 }
 
 .projects-container {
+	scroll-snap-align: start;
 	display: grid;
 	gap: 1rem;
 	justify-content: center;
 	color: rgb(71, 123, 168);
 	width: 88%;
 	margin: 0 auto;
+	height: 140vh;
 }
 
 .projects-title {

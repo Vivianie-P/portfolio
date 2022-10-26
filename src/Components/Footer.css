@@ -11,20 +11,45 @@
 	justify-content: space-evenly;
 	width: 100%;
 	margin-top: 2rem;
+	flex-direction: column;
+	height: 10vh;
+}
+
+.svg-container {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .cv-svg,
 .github-svg,
 .linkedin-svg {
+	display: flex;
 	height: 2.5rem;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
 }
 
 .cv-svg:hover,
 .github-svg:hover,
 .linkedin-svg:hover {
 	fill: #f1e8db;
-	transform: scale(1.1);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.footer-ending {
+	display: flex;
+	color: #f1e8db;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+.footer-sentence {
+	display: flex;
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
+	font-size: 1.8rem;
 }
 
 @media screen and (min-width: 600px) {

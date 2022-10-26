@@ -7,6 +7,7 @@
 }
 
 .skills-container {
+	scroll-snap-align: start;
 	display: flex;
 	color: rgb(71, 123, 168);
 	font-size: 10px;
@@ -14,6 +15,7 @@
 	margin-bottom: 2rem;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 500;
+	height: 50vh;
 }
 
 .column {

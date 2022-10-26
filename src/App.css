@@ -9,9 +9,14 @@
 	width: 100vw;
 	/* background-color: black; */
 	overflow: hidden;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+	transition-timing-function: ease-in 5s;
 }
 
 .main-header {
+	scroll-snap-align: start;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;

@@ -8,6 +8,8 @@
 .contact-me-container {
 	margin-top: 3rem;
 	width: 100%;
+	scroll-snap-align: start;
+	height: 20vh;
 }
 
 .contact-me-title {
@@ -53,7 +55,8 @@
 }
 
 .mailto:hover {
-	color: #f1e8db;
+	background-color: #f1e8db;
+	color: rgb(71, 123, 168);
 	transform: scale(1.04);
 }
 
