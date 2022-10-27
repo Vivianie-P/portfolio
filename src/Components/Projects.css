@@ -6,6 +6,8 @@
 }
 .projects-main {
 	scroll-snap-align: start;
+	height: 150vh;
+	margin-top: 3rem;
 }
 
 .projects-title {
