@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
 .App {
 	width: 100vw;
 	/* background-color: black; */
@@ -12,7 +16,6 @@
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	height: 100vh;
-	transition-timing-function: ease-in 5s;
 }
 
 .main-header {
