@@ -6,10 +6,10 @@
 }
 
 .contact-me-container {
-	margin-top: 3rem;
+	margin-top: 1rem;
 	width: 100%;
 	scroll-snap-align: start;
-	height: 20vh;
+	height: 25vh;
 }
 
 .contact-me-title {
@@ -35,9 +35,12 @@
 .subtitle {
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	font-size: 1.8rem;
 	color: rgb(71, 123, 168);
 	font-family: "Saira Condensed", sans-serif;
-	font-weight: 700;
+	font-weight: 500;
+	padding: 0 2rem 0;
 }
 
 .mailto {

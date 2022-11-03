@@ -10,9 +10,9 @@
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	margin-top: 3rem;
+	margin-top: 1rem;
 	flex-direction: column;
-	height: 10vh;
+	height: 20vh;
 }
 
 .svg-container {
