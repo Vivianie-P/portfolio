@@ -38,7 +38,6 @@
 
 .footer-ending {
 	display: flex;
-	color: #f1e8db;
 	justify-content: center;
 	width: 100%;
 	text-align: center;
@@ -48,7 +47,7 @@
 .footer-sentence {
 	display: flex;
 	font-family: "Saira Condensed", sans-serif;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 1.8rem;
 }
 

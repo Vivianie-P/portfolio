@@ -11,14 +11,16 @@
 
 .mobile-header-on {
 	display: flex;
-	position: absolute;
+	position: fixed;
+	overflow-y: hidden;
 	z-index: 100;
 	text-align: center;
-	top: 6%;
-	left: 8%;
-	border-radius: 8%;
-	width: 85%;
+	top: 5%;
+	left: 0%;
+	/* border: 2px solid #477ba8; */
+	width: 100%;
 	height: 11rem;
+	transition: all 0.3s;
 	background-color: #f1e8db;
 }
 
@@ -64,6 +66,7 @@
 	font-size: 2rem;
 	background: none;
 	color: rgb(71, 123, 168);
+	cursor: pointer;
 }
 
 .light-dark {

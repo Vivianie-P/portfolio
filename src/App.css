@@ -11,7 +11,6 @@ body {
 
 .App {
 	width: 100vw;
-	/* background-color: black; */
 	overflow: hidden;
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
@@ -23,7 +22,11 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	padding: 1rem 1rem 0;
+	padding: 0.5rem 1rem 0;
+	position: fixed;
+	top: 0;
+	background-color: #f1e8db;
+	/* border: 2px solid rgb(71, 123, 168); */
 }
 
 .logo {

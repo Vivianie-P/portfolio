@@ -12,7 +12,6 @@
 
 .projects-title {
 	text-align: center;
-	color: #f1e8db;
 	font-size: 50px;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 700;
@@ -37,7 +36,7 @@
 	cursor: pointer;
 	transition: 200ms ease-in;
 	width: 100%;
-	border: 1px solid #477ba8;
+	border: 3px solid #477ba8;
 }
 
 .card:hover {

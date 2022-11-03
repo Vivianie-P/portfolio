@@ -11,7 +11,6 @@
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
-	color: rgb(71, 123, 168);
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 600;
 	scroll-snap-align: start;
@@ -20,13 +19,14 @@
 
 .aboutme-title {
 	text-align: center;
-	color: #f1e8db;
+	/* color: #f1e8db; */
 	font-size: 50px;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 700;
 }
 
 .aboutme-ppg {
+	color: rgb(71, 123, 168);
 	padding: 0 2rem 2rem;
 	margin: 0;
 	font-size: 30px;

@@ -3,7 +3,7 @@ import "./AboutMe.css";
 
 function AboutMe() {
 	return (
-		<div className="aboutme-main" id="/">
+		<div className="aboutme-main" id="/about-me">
 			<h1 className="aboutme-title">About Me</h1>
 			<p className="aboutme-ppg">
 				My interest in web devlopment started back in 2020 after graduating in the

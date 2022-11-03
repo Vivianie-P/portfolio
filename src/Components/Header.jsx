@@ -7,6 +7,7 @@ import {
 	faBarsStaggered,
 	faMoon,
 	faSun,
+	faX,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Header = (props) => {
@@ -29,10 +30,21 @@ const Header = (props) => {
 							);
 						})}
 					</ul>
+					<button className="light-dark" onClick={() => props.themeToggler()}>
+						{props.theme === "light" ? (
+							<FontAwesomeIcon icon={faMoon} className="light-dark" />
+						) : (
+							<FontAwesomeIcon icon={faSun} className="light-dark" />
+						)}
+					</button>
 				</nav>
 			</div>
 			<Link to="#" className="hamburger">
-				<FontAwesomeIcon icon={faBarsStaggered} onClick={showSidebar} />
+				{sidebar ? (
+					<FontAwesomeIcon icon={faX} onClick={showSidebar} />
+				) : (
+					<FontAwesomeIcon icon={faBarsStaggered} onClick={showSidebar} />
+				)}
 			</Link>
 			<div className={sidebar ? "mobile-header-on" : "mobile-header-off"}>
 				<nav className="menu-items">
@@ -42,7 +54,7 @@ const Header = (props) => {
 								<li key={index} className={item.cName}>
 									<Link to={item.path} onClick={closeMenu}>
 										{item.icon}
-										<span>{item.title}</span>
+										<span onClick={closeMenu}>{item.title}</span>
 									</Link>
 								</li>
 							);
@@ -62,3 +74,12 @@ const Header = (props) => {
 };
 
 export default Header;
+
+// const showSidebar = () => {
+// 	setSidebar(!sidebar);
+// 	if (typeof window != "undefined" && window.document) {
+// 		document.body.style.overflow = "hidden";
+
+// sidebar ? document.body.style.overflow = "hidden" : document.body.style.overflow = 'unset';;
+// 	}
+// };
