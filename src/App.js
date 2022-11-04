@@ -31,7 +31,9 @@ function App() {
 					<div className="main">
 						<Router>
 							<div className="main-header">
-								<h1 className="logo">VP</h1>
+								<a href="http://localhost:3000/" className="logo">
+									VP
+								</a>
 								<Header theme={theme} setTheme={setTheme} themeToggler={themeToggler} />
 							</div>
 							<Routes>
