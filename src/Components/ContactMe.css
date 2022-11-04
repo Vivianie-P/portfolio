@@ -1,42 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;600;700&display=swap");
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
 
 .contact-me-container {
-	margin-top: 1rem;
+	margin-top: 10rem;
 	width: 100%;
 	scroll-snap-align: start;
 	height: 25vh;
 }
 
 .contact-me-title {
-	/* color: rgb(71, 123, 168); */
+	letter-spacing: 0.4rem;
 	margin: 0;
 	display: flex;
 	justify-content: center;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 700;
-	font-size: 2.5rem;
+	font-size: 5rem;
 }
 
 .inner-container {
 	display: flex;
-	font-size: 1rem;
-	justify-content: center;
+	justify-content: space-evenly;
 	border: 3px solid;
 	flex-direction: column;
 	width: 88%;
 	margin: 0 auto;
+	height: 20rem;
 }
 
 .subtitle {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	font-size: 1.8rem;
+	font-size: 2.8rem;
 	color: rgb(71, 123, 168);
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 500;
@@ -49,12 +44,12 @@
 	width: 50%;
 	display: flex;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: 3rem;
 	justify-content: center;
 	margin: 0 auto;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 500;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 
 .mailto:hover {

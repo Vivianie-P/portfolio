@@ -41,6 +41,7 @@ function App() {
 							</Routes>
 						</Router>
 						<div className="component-container">
+							<Home />
 							<AboutMe />
 							<Skills />
 							<Projects />

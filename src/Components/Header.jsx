@@ -74,12 +74,3 @@ const Header = (props) => {
 };
 
 export default Header;
-
-// const showSidebar = () => {
-// 	setSidebar(!sidebar);
-// 	if (typeof window != "undefined" && window.document) {
-// 		document.body.style.overflow = "hidden";
-
-// sidebar ? document.body.style.overflow = "hidden" : document.body.style.overflow = 'unset';;
-// 	}
-// };
