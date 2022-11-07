@@ -77,4 +77,29 @@
 }
 
 @media screen and (min-width: 600px) {
+	.hamburger {
+		display: none;
+	}
+
+	.desktop-header {
+		display: inline-block;
+		text-decoration: none;
+		color: rgb(71, 123, 168);
+	}
+
+	/* .desktop-nav {
+	} */
+
+	.menu-items {
+		font-size: 3rem;
+		flex-direction: row;
+		background-color: none;
+		border: none;
+		color: rgb(71, 123, 168);
+	}
+
+	.nav-link {
+		border-style: none;
+		border-color: none;
+	}
 }

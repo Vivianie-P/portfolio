@@ -2,9 +2,7 @@
 
 .skills-main {
 	margin-top: 4rem;
-	/* scroll-snap-align: start; */
-	height: 20vh;
-	padding: 60px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 .skills-title {
@@ -18,17 +16,20 @@
 
 .skills-container {
 	display: flex;
-	color: rgb(71, 123, 168);
-	text-align: center;
-	margin-bottom: 2rem;
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 500;
-	margin: 0 2rem 0;
+	flex-wrap: wrap;
 }
 
-.column {
-	width: 50%;
-	font-size: 4rem;
+.skills__skill {
+	display: flex;
+	padding: 1rem 2.5rem;
+	margin-bottom: 1.5rem;
+	margin-left: 1.5rem;
+	background: rgba(129, 129, 129, 0.2);
+	border-radius: 5px;
+	color: rgb(71, 123, 168);
+	font-family: "Saira Condensed", sans-serif;
+	font-weight: 500;
+	font-size: 3.5rem;
 }
 
 @media screen and (min-width: 600px) {

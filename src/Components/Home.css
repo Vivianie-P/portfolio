@@ -9,7 +9,7 @@
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 600;
 	/* scroll-snap-align: start; */
-	height: 100vh;
+	height: 110vh;
 }
 
 .home-title {
@@ -28,7 +28,7 @@
 
 .home-ppg {
 	text-align: center;
-	font-size: 30px;
+	font-size: 2.5rem;
 	padding: 0 2rem 2rem;
 	margin: 0;
 	color: rgb(71, 123, 168);

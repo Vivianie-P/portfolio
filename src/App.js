@@ -49,7 +49,7 @@ function App() {
 						</Router>
 						<div className="component-container">
 							{/* <Home /> */}
-							<button onClick={handleClick}>TESTING</button>
+							{/* <button onClick={handleClick}>TESTING</button> */}
 							<div className="component-inner-container">
 								<AboutMe />
 							</div>

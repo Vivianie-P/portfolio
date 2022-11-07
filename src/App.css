@@ -10,17 +10,23 @@ body {
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	height: 100vh;
+	border: 6px solid;
+	border-image-source: linear-gradient(
+		43deg,
+		rgba(132, 171, 204, 1) 51%,
+		rgba(71, 123, 168, 1) 64%
+	);
+	border-image-slice: 1;
 }
 
 .main-header {
-	scroll-snap-align: start;
-	width: 100%;
+	/* scroll-snap-align: start; */
+	width: 96%;
 	display: flex;
 	justify-content: space-between;
-	padding: 1rem 3rem 0;
+	padding: 1rem 4rem 0;
 	position: fixed;
 	height: 60px;
-	top: 0;
 	/* background-color: black; */
 	background-color: #f1e3cf;
 	/* border: 2px solid rgb(71, 123, 168); */

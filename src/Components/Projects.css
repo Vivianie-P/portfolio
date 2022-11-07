@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;700&display=swap");
 
 .projects-main {
-	/* scroll-snap-align: start; */
-	padding-top: 10rem;
+	padding-top: 5rem;
 }
 
 .projects-title {
@@ -21,6 +20,11 @@
 	gap: 3rem;
 	width: 88%;
 	margin: 0 auto;
+}
+
+.card__info {
+	border-radius: 15px;
+	box-shadow: 0px 1px 5px #477ba8;
 }
 
 .card {
