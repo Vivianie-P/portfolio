@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./Components/themes.js";
 import Header from "./Components/Header.jsx";
@@ -23,6 +23,13 @@ function App() {
 		console.log(theme);
 	};
 
+	const contactMeRef = useRef(null);
+	const projectsRef = useRef(null);
+
+	const handleClick = () => {
+		contactMeRef.current?.scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
 		<ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
 			<GlobalStyles />
@@ -41,12 +48,23 @@ function App() {
 							</Routes>
 						</Router>
 						<div className="component-container">
-							<Home />
-							<AboutMe />
-							<Skills />
-							<Projects />
-							<ContactMe />
-							<Footer />
+							{/* <Home /> */}
+							<button onClick={handleClick}>TESTING</button>
+							<div className="component-inner-container">
+								<AboutMe />
+							</div>
+							<div className="component-inner-container">
+								<Skills />
+							</div>
+							<div className="component-inner-container" ref={projectsRef}>
+								<Projects id="projects" />
+							</div>
+							<div className="component-inner-container" ref={contactMeRef}>
+								<ContactMe />
+							</div>
+							<div className="component-inner-container">
+								<Footer />
+							</div>
 						</div>
 					</div>
 				</div>

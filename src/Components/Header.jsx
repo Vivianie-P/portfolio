@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+// import { button } from "react-router-dom";
 import { HeaderData } from "./HeaderData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,10 +10,16 @@ import {
 	faX,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Header = (props) => {
+const Header = React.forwardRef((props, ref) => {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => setSidebar(!sidebar);
 	const closeMenu = () => setSidebar(false);
+	// console.log("props: ", props);
+	// console.log("ref: ", ref);
+	// const handleClick = () => {
+	// 	ref.current?.scrollIntoView({ behavior: "smooth" });
+	// 	closeMenu();
+	// };
 
 	return (
 		<div>
@@ -23,9 +29,9 @@ const Header = (props) => {
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
-									<Link to={item.path} onClick={closeMenu}>
+									<button to={item.path} onClick={closeMenu}>
 										<span>{item.title}</span>
-									</Link>
+									</button>
 								</li>
 							);
 						})}
@@ -39,23 +45,23 @@ const Header = (props) => {
 					</button>
 				</nav>
 			</div>
-			<Link to="#" className="hamburger">
+			<button to="#" className="hamburger">
 				{sidebar ? (
 					<FontAwesomeIcon icon={faX} onClick={showSidebar} />
 				) : (
 					<FontAwesomeIcon icon={faBarsStaggered} onClick={showSidebar} />
 				)}
-			</Link>
+			</button>
 			<div className={sidebar ? "mobile-header-on" : "mobile-header-off"}>
 				<nav className="menu-items">
 					<ul className="menu-items-list">
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
-									<Link to={item.path} onClick={closeMenu}>
+									<a href={item.path}>
 										{item.icon}
-										<span onClick={closeMenu}>{item.title}</span>
-									</Link>
+										<span>{item.title}</span>
+									</a>
 								</li>
 							);
 						})}
@@ -71,6 +77,6 @@ const Header = (props) => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default Header;

@@ -2,7 +2,7 @@
 
 .skills-main {
 	margin-top: 4rem;
-	scroll-snap-align: start;
+	/* scroll-snap-align: start; */
 	height: 20vh;
 	padding: 60px 0 0 0;
 }

@@ -11,7 +11,7 @@ export const HeaderData = [
 	},
 	{
 		title: "Projects",
-		path: "/projects",
+		path: "./#projects",
 		cName: "nav-link",
 	},
 	{

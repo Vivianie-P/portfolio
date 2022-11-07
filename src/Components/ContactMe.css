@@ -3,7 +3,7 @@
 .contact-me-container {
 	margin-top: 10rem;
 	width: 100%;
-	scroll-snap-align: start;
+	/* scroll-snap-align: start; */
 	height: 25vh;
 }
 
@@ -25,6 +25,7 @@
 	width: 88%;
 	margin: 0 auto;
 	height: 20rem;
+	border-radius: 15px;
 }
 
 .subtitle {
@@ -49,6 +50,7 @@
 	margin: 0 auto;
 	font-family: "Saira Condensed", sans-serif;
 	font-weight: 500;
+	border-radius: 30px;
 	/* margin-bottom: 1rem; */
 }
 
