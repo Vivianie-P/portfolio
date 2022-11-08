@@ -44,7 +44,7 @@ function Card(props) {
 	return (
 		<div className="card">
 			<div className="card__body">
-				<h2 className="card__title">{props.title}</h2>
+				<h1 className="card__title">{props.title}</h1>
 				<p className="card__description"> {props.description}</p>
 				<img className="card__image" src={props.img} alt="" />
 			</div>
