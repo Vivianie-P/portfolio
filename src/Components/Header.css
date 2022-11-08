@@ -110,6 +110,9 @@
 	}
 
 	.light-dark {
+		align-items: center;
+		margin: 0;
+		padding: 0.3rem 0 0 0;
 		font-size: 3rem;
 	}
 }
