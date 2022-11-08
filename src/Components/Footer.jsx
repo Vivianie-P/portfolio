@@ -44,11 +44,7 @@ const Footer = () => {
 					</svg>
 				</div>
 			</div>
-			<div className="footer-ending">
-				<h1 className="footer-sentence">
-					Designed and Developed by <br></br> Vivianie Price
-				</h1>
-			</div>
+			<div className="line"></div>
 		</div>
 	);
 };

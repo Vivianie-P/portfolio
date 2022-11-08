@@ -36,6 +36,10 @@ function App() {
 			<StyledApp>
 				<div className="App">
 					<div className="main">
+						<div className="side-menu">
+							<Footer />
+						</div>
+						<div className="side-menu-right"></div>
 						<Router>
 							<div className="main-header">
 								<a href="http://localhost:3000/" className="logo">
@@ -50,21 +54,11 @@ function App() {
 						<div className="component-container">
 							{/* <Home /> */}
 							{/* <button onClick={handleClick}>TESTING</button> */}
-							<div className="component-inner-container">
-								<AboutMe />
-							</div>
-							<div className="component-inner-container">
-								<Skills />
-							</div>
-							<div className="component-inner-container" ref={projectsRef}>
-								<Projects id="projects" />
-							</div>
-							<div className="component-inner-container" ref={contactMeRef}>
-								<ContactMe />
-							</div>
-							<div className="component-inner-container">
-								<Footer />
-							</div>
+							<AboutMe />
+							<Skills />
+							<Projects />
+							<ContactMe />
+							{/* <Footer /> */}
 						</div>
 					</div>
 				</div>

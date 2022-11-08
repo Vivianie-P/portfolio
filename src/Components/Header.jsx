@@ -29,7 +29,7 @@ const Header = React.forwardRef((props, ref) => {
 						{HeaderData.map((item, index) => {
 							return (
 								<li key={index} className={item.cName}>
-									<button to={item.path} onClick={closeMenu}>
+									<button className="header-item" to={item.path} onClick={closeMenu}>
 										<span>{item.title}</span>
 									</button>
 								</li>

@@ -11,6 +11,11 @@ function ContactMe() {
 					Contact Me
 				</a>
 			</div>
+			<div className="ending-sentence">
+				<h1 className="sentence">
+					Designed and Developed by <br></br> Vivianie Price
+				</h1>
+			</div>
 		</div>
 	);
 }

@@ -82,24 +82,34 @@
 	}
 
 	.desktop-header {
-		display: inline-block;
-		text-decoration: none;
-		color: rgb(71, 123, 168);
+		display: flex;
 	}
 
-	/* .desktop-nav {
-	} */
+	.desktop-nav {
+		display: flex;
+	}
 
 	.menu-items {
-		font-size: 3rem;
 		flex-direction: row;
-		background-color: none;
-		border: none;
-		color: rgb(71, 123, 168);
+		padding: 0;
 	}
 
-	.nav-link {
+	.header-item {
 		border-style: none;
-		border-color: none;
+		color: rgb(71, 123, 168);
+		text-decoration: none;
+		background-color: transparent;
+		font-size: 3.5rem;
+		font-family: "Saira Condensed", sans-serif;
+		font-weight: 500;
+		padding: 0 15px 0;
+	}
+
+	.header-item:hover {
+		color: #5ba0dd;
+	}
+
+	.light-dark {
+		font-size: 3rem;
 	}
 }

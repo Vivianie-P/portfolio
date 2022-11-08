@@ -21,14 +21,14 @@ body {
 
 .main-header {
 	/* scroll-snap-align: start; */
-	width: 96%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 4rem 0;
 	position: fixed;
 	height: 60px;
 	/* background-color: black; */
-	background-color: #f1e3cf;
+	/* background-color: #f1e3cf; */
 	/* border: 2px solid rgb(71, 123, 168); */
 }
 
@@ -46,4 +46,27 @@ body {
 .logo:hover {
 	cursor: pointer;
 	transform: scale(1.2);
+	color: #5ba0dd;
+}
+
+.side-menu {
+	display: flex;
+	width: 90px;
+	position: fixed;
+	bottom: -60px;
+	left: 30px;
+	right: auto;
+	z-index: 10;
+	height: 40vh;
+}
+
+.component-container {
+	padding: 0 100px;
+}
+
+@media screen and (min-width: 600px) {
+	.main-header {
+		position: relative;
+		padding: 0rem 3rem 0 3rem;
+	}
 }
