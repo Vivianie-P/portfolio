@@ -73,7 +73,7 @@
 	font-size: 2.8rem;
 	background: none;
 	border: none;
-	color: rgb(71, 123, 168);
+	color: #b46a55;
 	margin: 0.5rem 0rem;
 }
 
@@ -97,7 +97,8 @@
 
 	.header-item {
 		border-style: none;
-		color: rgb(71, 123, 168);
+		/* color: rgb(71, 123, 168); */
+		color: #b46a55;
 		text-decoration: none;
 		background-color: transparent;
 		font-size: 3.5rem;

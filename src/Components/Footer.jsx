@@ -13,7 +13,7 @@ const Footer = () => {
 				<a href={resume} target="__blank">
 					<svg
 						className="cv-svg"
-						fill="rgb(71, 123, 168)"
+						fill="#b46a55"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 80 80"
 					>
@@ -24,7 +24,7 @@ const Footer = () => {
 				<div className="github-svg">
 					<svg
 						onClick={() => openInNewTab("https://github.com/Vivianie-P")}
-						fill="rgb(71, 123, 168)"
+						fill="#b46a55"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 16 16"
 					>
@@ -36,7 +36,7 @@ const Footer = () => {
 						onClick={() =>
 							openInNewTab("https://www.linkedin.com/in/vivianie-price-889802138/")
 						}
-						fill="rgb(71, 123, 168)"
+						fill="#b46a55"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 120 96"
 					>

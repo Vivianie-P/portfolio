@@ -7,25 +7,25 @@ const Skills = () => {
 			<h1 className="skills-title">Skills</h1>
 			<div className="skills-container" id="skills">
 				<div className="skills__skill">
-					<h1>React</h1>
+					<h2>React</h2>
 				</div>
 				<div className="skills__skill">
-					<h1>JavaScript</h1>
+					<h2>JavaScript</h2>
 				</div>
 				<div className="skills__skill">
-					<h1>HTML</h1>
+					<h2>HTML</h2>
 				</div>
 				<div className="skills__skill">
-					<h1>CSS</h1>
+					<h2>CSS</h2>
 				</div>
 				<div className="skills__skill">
-					<h1>Python</h1>
+					<h2>Python</h2>
 				</div>
 				<div className="skills__skill">
-					<h1>Node.js</h1>
+					<h2>Node.js</h2>
 				</div>
 				<div className="skills__skill">
-					<h1>GIT</h1>
+					<h2>GIT</h2>
 				</div>
 			</div>
 		</div>

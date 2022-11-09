@@ -12,9 +12,9 @@ function ContactMe() {
 				</a>
 			</div>
 			<div className="ending-sentence">
-				<h1 className="sentence">
+				<h2 className="sentence">
 					Designed and Developed by <br></br> Vivianie Price
-				</h1>
+				</h2>
 			</div>
 		</div>
 	);

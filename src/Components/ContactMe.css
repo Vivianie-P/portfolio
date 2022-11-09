@@ -10,8 +10,10 @@
 	margin: 0;
 	display: flex;
 	justify-content: center;
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 700;
+	font-family: "Shrikhand", cursive;
+	font-weight: 400;
+	/* font-family: "Saira Condensed", sans-serif;
+	font-weight: 700; */
 	font-size: 5rem;
 }
 
@@ -33,28 +35,32 @@
 	text-align: center;
 	font-size: 2.8rem;
 	/* color: rgb(71, 123, 168); */
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 500;
+	/* font-family: "Saira Condensed", sans-serif;
+	font-weight: 500; */
+	font-family: "Arapey", serif;
+	font-weight: 400;
 	padding: 0 2rem 0;
 }
 
 .mailto {
-	background-color: rgb(71, 123, 168);
-	color: #f1e8db;
+	background-color: #b46a55;
+	/* color: #f1e8db; */
 	width: 50%;
 	display: flex;
 	text-decoration: none;
 	font-size: 3rem;
 	justify-content: center;
 	margin: 0 auto;
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 500;
+	/* font-family: "Saira Condensed", sans-serif;
+	font-weight: 500; */
+	font-family: "Arapey", serif;
+	font-weight: 400;
 	border-radius: 30px;
 	/* margin-bottom: 1rem; */
 }
 
 .mailto:hover {
-	background-color: #5ba0dd;
+	background-color: #e0866d;
 	transform: scale(1.04);
 }
 
@@ -68,8 +74,10 @@
 
 .sentence {
 	display: flex;
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 700;
+	font-family: "Arapey", serif;
+	font-weight: 400;
+	/* font-family: "Saira Condensed", sans-serif;
+	font-weight: 700; */
 	font-size: 2.8rem;
 }
 

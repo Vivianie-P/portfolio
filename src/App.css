@@ -13,8 +13,8 @@ body {
 	border: 6px solid;
 	border-image-source: linear-gradient(
 		43deg,
-		rgba(132, 171, 204, 1) 51%,
-		rgba(71, 123, 168, 1) 64%
+		rgb(180, 124, 69) 59%,
+		rgb(238, 173, 83) 92%
 	);
 	border-image-slice: 1;
 }
@@ -33,7 +33,8 @@ body {
 }
 
 .logo {
-	color: rgb(71, 123, 168);
+	/* color: rgb(71, 123, 168); */
+	color: #b46a55;
 	height: 50px;
 	width: 50px;
 	margin: 0;
@@ -47,7 +48,7 @@ body {
 .logo:hover {
 	cursor: pointer;
 	transform: scale(1.2);
-	color: #5ba0dd;
+	/* color: #5ba0dd; */
 }
 
 .side-menu {
@@ -68,6 +69,6 @@ body {
 @media screen and (min-width: 600px) {
 	.main-header {
 		position: relative;
-		padding: 0rem 100px 0;
+		padding: 3rem 10rem 0;
 	}
 }
