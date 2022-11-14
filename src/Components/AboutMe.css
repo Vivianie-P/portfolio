@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Julius+Sans+One&family=Monoton&family=Play&family=Racing+Sans+One&family=Shrikhand&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&family=Shrikhand&family=Varela+Round&display=swap");
 
 .aboutme-main {
 	display: flex;
@@ -7,11 +6,9 @@
 	align-items: center;
 	text-align: left;
 	flex-direction: column;
-	/* font-family: "Play", sans-serif; */
-	font-family: "Arapey", serif;
+	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
 	padding-top: 30px;
-	/* transform: translateZ(0); */
 }
 
 .aboutme-title {
@@ -23,16 +20,60 @@
 }
 
 .aboutme-ppg {
-	/* color: rgb(71, 123, 168); */
 	padding: 0 2rem 2rem;
 	margin: 0;
-	font-size: 2.1rem;
+	font-size: 2rem;
 	line-height: 4rem;
+}
+
+.skills-main {
+	margin-top: 4rem;
+	padding: 10px 0 0 0;
+}
+
+.skills-title {
+	letter-spacing: 0.5rem;
+	text-align: center;
+	font-size: 50px;
+	font-family: "Shrikhand", cursive;
+	font-weight: 400;
+	margin: 0;
+}
+
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skills__skill {
+	display: flex;
+	padding: 1rem 2.5rem;
+	margin-bottom: 1.5rem;
+	margin-left: 1.5rem;
+	background: rgba(180, 106, 85, 0.2);
+	border-radius: 5px;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
+	font-size: 3.5rem;
 }
 
 @media screen and (min-width: 600px) {
 	.aboutme-main {
-		float: left;
-		width: 50%;
+		padding: 0;
+	}
+
+	.skills-main {
+		margin-top: 0;
+		padding: 0;
+	}
+
+	.skills-container {
+		padding: 2rem 5rem 10rem;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.skills__skill {
+		font-size: 3rem;
 	}
 }

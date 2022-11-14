@@ -7,20 +7,24 @@ body {
 .App {
 	width: 100vw;
 	overflow: hidden;
-	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	height: 100vh;
 	border: 6px solid;
 	border-image-source: linear-gradient(
 		43deg,
-		rgb(180, 124, 69) 59%,
-		rgb(238, 173, 83) 92%
+		rgba(170, 134, 99, 1) 47%,
+		rgba(180, 106, 85, 1) 62%
 	);
 	border-image-slice: 1;
 }
 
+.side-menu {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+}
+
 .main-header {
-	/* scroll-snap-align: start; */
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -33,14 +37,12 @@ body {
 }
 
 .logo {
-	/* color: rgb(71, 123, 168); */
 	color: #b46a55;
 	height: 50px;
 	width: 50px;
 	margin: 0;
 	font-family: "Shrikhand", cursive;
 	font-weight: 400;
-	/* font-style: bold; */
 	font-size: 3.2rem;
 	text-decoration: none;
 }
@@ -51,17 +53,6 @@ body {
 	/* color: #5ba0dd; */
 }
 
-.side-menu {
-	display: flex;
-	width: 90px;
-	position: fixed;
-	bottom: -60px;
-	left: 30px;
-	right: auto;
-	z-index: 10;
-	height: 40vh;
-}
-
 .component-container {
 	padding: 0 100px;
 }
@@ -69,6 +60,35 @@ body {
 @media screen and (min-width: 600px) {
 	.main-header {
 		position: relative;
-		padding: 3rem 10rem 0;
+		padding: 3rem 10rem 6rem;
+	}
+
+	.desktop-svg {
+		display: flex;
+		width: 90px;
+		position: fixed;
+		bottom: -60px;
+		left: 30px;
+		right: auto;
+		z-index: 10;
+		height: 40vh;
+	}
+
+	.mobile-svg {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.side-menu {
+		display: none;
+	}
+
+	.desktop-svg {
+		display: none;
+	}
+
+	.component-container {
+		padding: 0;
 	}
 }

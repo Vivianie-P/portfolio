@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
 
-.footer-container {
+.svg-main {
 	display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;
 	align-items: center;
-	/* height: 30vh; */
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 2rem 2rem;
 }
 
 .svg-container {
 	display: flex;
 	justify-content: space-evenly;
-	flex-direction: column;
-	height: 30vh;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -21,15 +19,13 @@
 .github-svg,
 .linkedin-svg {
 	display: flex;
-	height: 3rem;
-	width: 100%;
+	height: 2.5rem;
 	padding: 0;
 }
 
 .cv-svg:hover,
 .github-svg:hover,
 .linkedin-svg:hover {
-	fill: #5ba0dd;
 	transform: scale(1.2);
 	cursor: pointer;
 }
@@ -41,5 +37,20 @@
 	margin: 0 auto;
 }
 
-/* @media screen and (min-width: 600px) {
-} */
+@media screen and (max-width: 600px) {
+	.line {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.svg-main {
+		padding: 0;
+	}
+
+	.svg-container {
+		flex-direction: column;
+		height: 20vh;
+		margin-top: 6rem;
+	}
+}

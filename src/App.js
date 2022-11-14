@@ -5,10 +5,9 @@ import { lightTheme, darkTheme, GlobalStyles } from "./Components/themes.js";
 import Header from "./Components/Header.jsx";
 import Home from "./Components/Home.jsx";
 import AboutMe from "./Components/AboutMe.jsx";
-import Skills from "./Components/Skills.jsx";
 import Projects from "./Components/Projects.jsx";
 import ContactMe from "./Components/ContactMe.jsx";
-import Footer from "./Components/Footer.jsx";
+import Svg from "./Components/Svg.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const StyledApp = styled.div`
@@ -36,8 +35,8 @@ function App() {
 			<StyledApp>
 				<div className="App">
 					<div className="main">
-						<div className="side-menu">
-							<Footer />
+						<div className="desktop-svg">
+							<Svg />
 						</div>
 						<div className="side-menu-right"></div>
 						<Router>
@@ -53,12 +52,12 @@ function App() {
 						</Router>
 						<div className="component-container">
 							{/* <Home /> */}
-							{/* <button onClick={handleClick}>TESTING</button> */}
 							<AboutMe />
-							<Skills />
 							<Projects />
 							<ContactMe />
-							{/* <Footer /> */}
+							<div className="mobile-svg">
+								<Svg />
+							</div>
 						</div>
 					</div>
 				</div>

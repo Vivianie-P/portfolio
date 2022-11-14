@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Julius+Sans+One&family=Monoton&family=Play&family=Racing+Sans+One&family=Shrikhand&family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&family=Shrikhand&family=Varela+Round&display=swap");
 
 .desktop-header {
 	display: none;
@@ -16,8 +15,7 @@
 	left: 0%;
 	width: 100%;
 	transition: ease-in 0.3s;
-	/* background-color: black; */
-	background-color: #f1e3cf;
+	/* background-color: #f1e3cf; */
 }
 
 .mobile-header-off {
@@ -32,8 +30,8 @@
 	text-align: center;
 	width: 100%;
 	list-style-type: none;
-	font-family: "Saira Condensed", sans-serif;
-	font-weight: 500;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
 }
 
 .menu-items-list {
@@ -45,7 +43,6 @@
 
 .nav-link a {
 	text-decoration: none;
-	color: rgb(71, 123, 168);
 	font-size: 3.6rem;
 }
 
@@ -62,7 +59,7 @@
 	justify-content: flex-end;
 	font-size: 4rem;
 	background: none;
-	color: rgb(71, 123, 168);
+	color: #b46a55;
 	cursor: pointer;
 	padding-top: 12px;
 	border: none;
@@ -97,25 +94,23 @@
 
 	.header-item {
 		border-style: none;
-		/* color: rgb(71, 123, 168); */
 		color: #b46a55;
 		text-decoration: none;
 		background-color: transparent;
-		font-size: 3.5rem;
-		font-family: "Arapey", serif;
+		font-size: 3rem;
+		font-family: "Varela Round", sans-serif;
 		font-weight: 400;
-		font-style: italic;
 		padding: 0 15px 0;
 	}
 
 	.header-item:hover {
-		color: #5ba0dd;
+		color: #b46a55;
 	}
 
 	.light-dark {
 		align-items: center;
 		margin: 0;
 		padding: 0.3rem 0 0 0;
-		font-size: 3rem;
+		font-size: 2.8rem;
 	}
 }
