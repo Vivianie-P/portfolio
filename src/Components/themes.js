@@ -19,12 +19,12 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.body};
 	}
 
-	h1, a {
+	h1 {
 		color:${(props) => props.theme.fontText}
 	}
 
 
-	p, h2 {
+	p, h2, a {
 		color:${(props) => props.theme.fontColor};
 	}
 

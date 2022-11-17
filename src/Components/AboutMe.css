@@ -14,7 +14,7 @@
 .aboutme-title {
 	letter-spacing: 0.5rem;
 	text-align: center;
-	font-size: 50px;
+	font-size: 5rem;
 	font-family: "Shrikhand", cursive;
 	font-weight: 400;
 }
@@ -51,7 +51,7 @@
 	font-size: 2.5rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 	.aboutme-main {
 		padding: 0;
 	}

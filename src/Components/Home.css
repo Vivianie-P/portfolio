@@ -27,7 +27,7 @@
 	/* color: #34383d; */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 	.home-main {
 		padding: 0 100px;
 	}
