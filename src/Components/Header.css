@@ -32,6 +32,8 @@
 	list-style-type: none;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
+	background-color: antiquewhite;
+	height: 100vh;
 }
 
 .menu-items-list {
@@ -91,6 +93,9 @@
 	.menu-items {
 		flex-direction: row;
 		padding: 0;
+		background-color: none;
+		height: 0;
+		align-items: baseline;
 	}
 
 	.header-item {

@@ -7,6 +7,7 @@ export const lightTheme = {
 	fontText: "#2f3338",
 	scrollBar: "#2f3338",
 	backgroundColor: "#efdec8",
+	// mobileBkgrdColor:
 };
 
 export const darkTheme = {
