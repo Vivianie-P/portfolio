@@ -4,6 +4,10 @@
 	font-size: 62.5%;
 }
 
+*::-webkit-scrollbar {
+	width: 0.6rem;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,4 +22,10 @@ body {
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@media screen and (max-width: 800px) {
+	*::-webkit-scrollbar {
+		width: 0.3rem;
+	}
 }

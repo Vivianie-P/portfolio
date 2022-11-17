@@ -33,7 +33,7 @@
 .line {
 	display: flex;
 	height: 200px;
-	border-left: 3px solid #b46a55;
+	border-left: 3px solid;
 	margin: 0 auto;
 }
 

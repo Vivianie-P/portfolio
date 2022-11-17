@@ -8,7 +8,6 @@ import AboutMe from "./Components/AboutMe.jsx";
 import Projects from "./Components/Projects.jsx";
 import ContactMe from "./Components/ContactMe.jsx";
 import Svg from "./Components/Svg.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const StyledApp = styled.div`
 	color: ${(props) => props.theme.fontColor};
@@ -34,24 +33,25 @@ function App() {
 			<GlobalStyles />
 			<StyledApp>
 				<div className="App">
+					<div className="main-header">
+						<a href="http://localhost:3000/" className="logo">
+							VP
+						</a>
+						<Header theme={theme} setTheme={setTheme} themeToggler={themeToggler} />
+					</div>
 					<div className="main">
 						<div className="desktop-svg">
 							<Svg />
 						</div>
-						<div className="side-menu-right"></div>
-						<Router>
-							<div className="main-header">
-								<a href="http://localhost:3000/" className="logo">
-									VP
-								</a>
-								<Header theme={theme} setTheme={setTheme} themeToggler={themeToggler} />
-							</div>
-							<Routes>
-								<Route exact path="/" element={<Home />} />
-							</Routes>
-						</Router>
+						<div className="right-side-menu">
+							<a className="secondary-mailto" href="mailto:vivianieprice@gmail.com">
+								vivianieprice@gmail.com
+							</a>
+							<div className="line"></div>
+						</div>
+
 						<div className="component-container">
-							{/* <Home /> */}
+							<Home />
 							<AboutMe />
 							<Projects />
 							<ContactMe />

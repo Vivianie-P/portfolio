@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&family=Shrikhand&family=Varela+Round&display=swap");
 
 .contact-me-container {
-	margin-top: 7rem;
+	/* margin-top: 7rem; */
 	width: 100%;
 }
 
@@ -20,7 +20,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	border: 3px solid;
-	box-shadow: 0px 3px 7px;
+	/* box-shadow: 0px 3px 7px; */
 	flex-direction: column;
 	width: 88%;
 	margin: 0 auto;
@@ -42,7 +42,7 @@
 	/* background-color: #b46a55; */
 	background: rgba(180, 106, 85, 0.2);
 	border-radius: 5px;
-	width: 30%;
+	width: 60%;
 	height: 4.5rem;
 	display: flex;
 	text-decoration: none;
