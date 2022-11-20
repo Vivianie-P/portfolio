@@ -7,6 +7,9 @@
 	flex-direction: column;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
+	height: 100vh;
+	margin-top: 9rem;
+	padding: 0 2rem;
 }
 
 .aboutme-title {
@@ -55,11 +58,18 @@
 
 @media screen and (min-width: 800px) {
 	.aboutme-main {
-		max-width: 80%;
+		max-width: 900px;
+		justify-content: center;
+		margin-top: 0;
 	}
 
 	.aboutme-title {
 		font-size: 5rem;
+	}
+
+	.aboutme-ppg {
+		width: 100%;
+		font-size: 2rem;
 	}
 
 	.skills-container {

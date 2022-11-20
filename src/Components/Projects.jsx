@@ -3,11 +3,11 @@ import "./Projects.css";
 
 const Projects = () => {
 	return (
-		<div className="projects-main">
+		<div className="projects-main" id="projects">
 			<div className="projects-title-container">
 				<h1 className="projects-title">Projects</h1>
 			</div>
-			<div className="projects-container" id="projects">
+			<div className="projects-container">
 				<Card
 					title="URL Shortener App"
 					description="This project is a URL shortening app that takes in the user's external URL link and shortens the link."
@@ -43,6 +43,7 @@ function Card(props) {
 				<h2 className="card__title">{props.title}</h2>
 				<img className="card__image__mobile" src={props.img} alt="" />
 				<p className="card__description"> {props.description}</p>
+
 				<a
 					href={props.gitLink}
 					className="card__btn"

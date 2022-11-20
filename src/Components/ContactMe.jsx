@@ -3,15 +3,18 @@ import "./ContactMe.css";
 
 function ContactMe() {
 	return (
-		<div className="contact-me-container">
+		<div className="contact-me-container" id="contact-me">
 			<h1 className="contact-me-title">Let's network</h1>
 			<div className="inner-container">
-				<h1 className="subtitle">Want to work together or have any questions?</h1>
+				<p className="subtitle">
+					Want to work together or have any questions? Feel free to click the button
+					below.
+				</p>
 				<a className="mailto" id="contact-me" href="mailto:vivianieprice@gmail.com">
-					Contact Me
+					Say Hello
 				</a>
 			</div>
-			<div className="ending-sentence">
+			<div className="sentence-container">
 				<h2 className="sentence">
 					Designed and Developed by <br></br> Vivianie Price
 				</h2>

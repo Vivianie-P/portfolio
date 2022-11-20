@@ -32,7 +32,7 @@ body {
 	position: fixed;
 	height: 60px;
 	top: 6px;
-	box-shadow: 0px 1px 3px #b46a55;
+	box-shadow: 0px 1px 7px;
 }
 
 .logo {
@@ -55,9 +55,12 @@ body {
 .component-container {
 	display: grid;
 	width: 100%;
-	padding: 0 2.2rem;
-	margin: 0 auto;
+	/* padding: 0 2.2rem; */
+	/* margin: 0 auto; */
 	gap: 15rem;
+	margin: 0px auto;
+	padding: 100px 100px;
+	max-width: 1000px;
 }
 
 @media screen and (min-width: 800px) {
@@ -79,7 +82,7 @@ body {
 
 	.secondary-mailto {
 		margin: 20px auto;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.1rem;
 		writing-mode: vertical-rl;
 		text-decoration: none;
 		font-family: "Varela Round", sans-serif;
@@ -113,10 +116,6 @@ body {
 	.mobile-svg {
 		display: none;
 	}
-
-	.component-container {
-		padding: 0 10rem;
-	}
 }
 
 @media screen and (max-width: 800px) {
@@ -130,5 +129,11 @@ body {
 
 	.desktop-svg {
 		display: none;
+	}
+
+	.component-container {
+		margin: 0px auto;
+		padding: 100px 0px;
+		max-width: 1000px;
 	}
 }

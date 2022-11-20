@@ -27,32 +27,38 @@
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center;
+	/* text-align: center; */
 	width: 100%;
 	list-style-type: none;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
-	background-color: antiquewhite;
+	background-color: rgb(113, 87, 68);
 	height: 100vh;
 }
 
 .menu-items-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 25vh;
 	list-style: none;
 	padding: 0;
-	margin: 0;
 	width: inherit;
 }
 
-.nav-link a {
+.nav-link {
+	background-color: transparent;
+}
+
+.header-item {
+	border: none;
 	text-decoration: none;
-	font-size: 3.6rem;
+	background-color: transparent;
+	font-size: 4rem;
 }
 
-.nav-link a:hover {
+.header-item:hover {
 	color: black;
-}
-
-.nav-link:hover {
 	transform: scale(1.1);
 }
 
@@ -93,7 +99,6 @@
 	.menu-items {
 		flex-direction: row;
 		padding: 0;
-		background-color: none;
 		height: 0;
 		align-items: baseline;
 	}

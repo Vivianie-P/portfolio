@@ -18,14 +18,14 @@ function App() {
 	const [theme, setTheme] = useState("dark");
 	const themeToggler = () => {
 		theme === "dark" ? setTheme("light") : setTheme("dark");
-		console.log(theme);
 	};
 
-	const contactMeRef = useRef(null);
+	const aboutRef = useRef(null);
 	const projectsRef = useRef(null);
+	const contactRef = useRef(null);
 
-	const handleClick = () => {
-		contactMeRef.current?.scrollIntoView({ behavior: "smooth" });
+	const handleClick = (ref) => {
+		ref.current?.scrollIntoView({ behavior: "smooth" });
 	};
 
 	return (
@@ -37,7 +37,14 @@ function App() {
 						<a href="http://localhost:3000/" className="logo">
 							VP
 						</a>
-						<Header theme={theme} setTheme={setTheme} themeToggler={themeToggler} />
+						<Header
+							theme={theme}
+							setTheme={setTheme}
+							themeToggler={themeToggler}
+							aboutClick={() => handleClick(aboutRef)}
+							projectsClick={() => handleClick(projectsRef)}
+							contactClick={() => handleClick(contactRef)}
+						/>
 					</div>
 					<div className="main">
 						<div className="desktop-svg">
@@ -52,9 +59,15 @@ function App() {
 
 						<div className="component-container">
 							<Home />
-							<AboutMe />
-							<Projects />
-							<ContactMe />
+							<div ref={aboutRef}>
+								<AboutMe />
+							</div>
+							<div ref={projectsRef}>
+								<Projects />
+							</div>
+							<div ref={contactRef}>
+								<ContactMe />
+							</div>
 							<div className="mobile-svg">
 								<Svg />
 							</div>
