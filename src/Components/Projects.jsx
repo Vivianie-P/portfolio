@@ -10,7 +10,8 @@ const Projects = () => {
 			<div className="projects-container">
 				<Card
 					title="URL Shortener App"
-					description="This project is a URL shortening app that takes in the user's external URL link and shortens the link."
+					description="This project is a URL shortening app that takes in the user's external URL link and shortens the link. The tech stack used to complete this project were JavaScript, CSS, & React.
+					"
 					img={require("./URL.jpg")}
 					gitLink="https://github.com/Vivianie-P/URL-Project"
 				/>

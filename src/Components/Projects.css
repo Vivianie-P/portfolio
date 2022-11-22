@@ -29,10 +29,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	z-index: 0;
-	cursor: pointer;
 	transition: 200ms ease-in;
 	width: 100%;
+	z-index: 1;
 	/* border: 3px solid #b46a55; */
 }
 
@@ -79,9 +78,10 @@
 	cursor: pointer;
 }
 
-/* .card__btn:hover {
+.card__btn:hover {
+	background: rgba(180, 106, 85, 0.6);
 	transform: scale(1.04);
-} */
+}
 
 @media screen and (min-width: 800px) {
 	.projects-main {

@@ -54,6 +54,7 @@
 }
 
 .mailto:hover {
+	background: rgba(180, 106, 85, 0.6);
 	cursor: pointer;
 	transform: scale(1.04);
 }
