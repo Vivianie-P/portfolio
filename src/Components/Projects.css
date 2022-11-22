@@ -42,6 +42,7 @@
 .card__image__mobile {
 	width: 100%;
 	object-fit: contain;
+	border-radius: 5px;
 }
 
 .card__title {
@@ -117,6 +118,7 @@
 
 	.card__image {
 		display: block;
+		border-radius: 5px;
 	}
 
 	.card-inner-info {
