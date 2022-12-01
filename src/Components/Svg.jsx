@@ -48,6 +48,11 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className="line"></div>
+			<div className="sentence-container">
+				<h2 className="sentence">
+					Designed and Built by <br></br> Vivianie Price
+				</h2>
+			</div>
 		</div>
 	);
 };

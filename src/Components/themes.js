@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
 		fill:${(props) => props.theme.filledColor};
 	}
 
-	.mobile-header, .menu-items {
+	.mobile-header, .desktop-header, .menu-items {
 		background-color: ${(props) => props.theme.backgroundColor};
 	}
 `;

@@ -7,7 +7,6 @@
 	flex-direction: column;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
-	height: 100vh;
 	margin-top: 9rem;
 	padding: 0 2rem;
 }
@@ -61,6 +60,7 @@
 		max-width: 900px;
 		justify-content: center;
 		margin-top: 0;
+		height: 100vh;
 	}
 
 	.aboutme-title {

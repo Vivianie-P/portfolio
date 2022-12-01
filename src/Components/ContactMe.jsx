@@ -14,11 +14,6 @@ function ContactMe() {
 					Say Hello
 				</a>
 			</div>
-			<div className="sentence-container">
-				<h2 className="sentence">
-					Designed and Developed by <br></br> Vivianie Price
-				</h2>
-			</div>
 		</div>
 	);
 }

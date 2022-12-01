@@ -12,8 +12,9 @@
 	position: fixed;
 	height: 60px;
 	top: 6px;
-	box-shadow: rgba(40, 38, 38, 0.541) 0px 5px 40px 0px;
+	box-shadow: rgba(40, 38, 38, 0.541) 0px 1px 10px 0px;
 	z-index: 20;
+	padding: 0px;
 }
 
 .mobile-menu-inactive {
@@ -38,6 +39,7 @@
 	width: 100%;
 	height: calc(100vh - 12px);
 	transition: height 0.5s;
+	z-index: 2;
 }
 
 .menu-items {
@@ -109,9 +111,14 @@
 
 	.desktop-header {
 		display: flex;
+		width: calc(100% - 12px);
 		justify-content: space-between;
-		width: 100%;
+		padding: 1rem 2.5rem;
+		position: fixed;
+		height: 60px;
+		top: 6px;
 		box-shadow: rgba(40, 38, 38, 0.541) 0px 5px 40px 0px;
+		z-index: 2;
 	}
 
 	.mobile-header {

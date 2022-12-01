@@ -37,6 +37,21 @@
 	margin: 0 auto;
 }
 
+.sentence-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+.sentence {
+	display: flex;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
+	font-size: 1.8rem;
+	margin-top: 3rem;
+}
+
 @media screen and (max-width: 800px) {
 	.line {
 		display: none;
@@ -52,5 +67,11 @@
 		flex-direction: column;
 		height: 20vh;
 		margin-top: 6rem;
+	}
+
+	.sentence-container {
+		position: fixed;
+		left: 0;
+		bottom: 30px;
 	}
 }
