@@ -24,16 +24,8 @@ body {
 	position: fixed;
 }
 
-.main-header {
+.header-container {
 	width: calc(100% - 12px);
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem 2rem 0;
-	position: fixed;
-	height: 60px;
-	top: 6px;
-	box-shadow: 0px 1px 7px;
-	z-index: 3;
 }
 
 .logo {
@@ -99,8 +91,12 @@ body {
 		margin: 0 auto;
 	}
 
-	.main-header {
+	.header-container {
 		padding: 3rem 5rem 6rem;
+	}
+
+	.header-main {
+		width: 100%;
 	}
 
 	.desktop-svg {

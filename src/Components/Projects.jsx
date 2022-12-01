@@ -41,18 +41,19 @@ function Card(props) {
 	return (
 		<div className="card">
 			<div className="card-inner-info">
-				<h2 className="card__title">{props.title}</h2>
 				<img className="card__image__mobile" src={props.img} alt="" />
-				<p className="card__description"> {props.description}</p>
-
-				<a
-					href={props.gitLink}
-					className="card__btn"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Link to GitHub
-				</a>
+				<div className="project-details">
+					<h2 className="card__title">{props.title}</h2>
+					<p className="card__description"> {props.description}</p>
+					<a
+						href={props.gitLink}
+						className="card__btn"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Link to GitHub
+					</a>
+				</div>
 			</div>
 			<img className="card__image" src={props.img} alt="" />
 		</div>

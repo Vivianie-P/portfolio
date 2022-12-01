@@ -6,7 +6,7 @@ export const lightTheme = {
 	filledColor: "#533127",
 	fontText: "#2f3338",
 	scrollBar: "#2f3338",
-	backgroundColor: "#efdec8",
+	backgroundColor: "#f1e3cf",
 	// mobileBkgrdColor:
 };
 
@@ -16,7 +16,7 @@ export const darkTheme = {
 	filledColor: "#c0976f",
 	fontText: "#f1e3cf",
 	scrollBar: "#f1e3cf",
-	backgroundColor: "#31353b",
+	backgroundColor: "#2f3338",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -41,7 +41,7 @@ export const GlobalStyles = createGlobalStyle`
 		fill:${(props) => props.theme.filledColor};
 	}
 
-	.main-header, .menu-items {
+	.mobile-header, .menu-items {
 		background-color: ${(props) => props.theme.backgroundColor};
 	}
 `;

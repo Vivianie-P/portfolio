@@ -35,6 +35,11 @@
 	/* border: 3px solid #b46a55; */
 }
 
+.card-inner-info {
+	display: flex;
+	flex-direction: column;
+}
+
 .card__image {
 	display: none;
 }
@@ -42,7 +47,8 @@
 .card__image__mobile {
 	width: 100%;
 	object-fit: contain;
-	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .card__title {
@@ -51,6 +57,14 @@
 	text-align: center;
 	font-family: "Lexend Deca", sans-serif;
 	font-weight: 500;
+}
+
+.project-details {
+	/* background-color: #f1e3cf; */
+	background-color: #c0976f;
+	/* background-color: #c57e52b8; */
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .card__description {
@@ -103,9 +117,21 @@
 		gap: 7rem;
 	}
 
+	.project-details {
+		border-top-left-radius: 5px;
+		border-bottom-right-radius: 0;
+	}
+
 	.card {
 		flex-direction: row;
 		width: 100%;
+	}
+
+	.card__title,
+	.card__description,
+	.card__btn {
+		color: #f1e3cf;
+		/* color: #4e1804; */
 	}
 
 	.card__title {
@@ -118,7 +144,28 @@
 
 	.card__image {
 		display: block;
-		border-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		height: 100%;
+		float: right;
+		width: 60%;
+		padding: 0;
+		filter: grayscale(100%) contrast(1) brightness(90%);
+		mix-blend-mode: multiply;
+	}
+
+	img .card__image {
+		filter: grayscale(100%) contrast(1) brightness(90%);
+		mix-blend-mode: multiply;
+	}
+
+	/* .card__image a::before {
+		background-color: #b46a55;
+	} */
+
+	.card__image:hover {
+		filter: none;
+		mix-blend-mode: none;
 	}
 
 	.card-inner-info {
@@ -139,12 +186,5 @@
 		font-size: 2rem;
 		margin: 0 auto;
 		width: 45%;
-	}
-
-	.card__image {
-		height: 100%;
-		float: right;
-		width: 60%;
-		padding: 0;
 	}
 }

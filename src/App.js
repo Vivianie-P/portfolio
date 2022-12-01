@@ -33,10 +33,7 @@ function App() {
 			<GlobalStyles />
 			<StyledApp>
 				<div className="App">
-					<div className="main-header">
-						<a href="http://localhost:3000/" className="logo">
-							VP
-						</a>
+					<div className="header-container">
 						<Header
 							theme={theme}
 							setTheme={setTheme}

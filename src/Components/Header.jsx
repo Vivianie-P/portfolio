@@ -9,20 +9,16 @@ import {
 	faX,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Header = React.forwardRef((props, ref) => {
-	const [sidebar, setSidebar] = useState(false);
-	const showSidebar = () => setSidebar(!sidebar);
-	const closeMenu = () => setSidebar(false);
-	console.log("props: ", props);
-	// console.log("ref: ", ref);
-	// const handleClick = () => {
-	// 	ref.current?.scrollIntoView({ behavior: "smooth" });
-	// 	closeMenu();
-	// };
+const Header = React.forwardRef((props) => {
+	const [showNavMenu, setShowNavMenu] = useState(false);
+	const toggleNavMenu = () => setShowNavMenu(!showNavMenu);
 
 	return (
-		<div>
+		<div className="header-main">
 			<div className="desktop-header">
+				<a href="http://localhost:3000/" className="logo">
+					VP
+				</a>
 				<nav className="desktop-nav">
 					<ul className="menu-items">
 						<li className="nav-link">
@@ -50,27 +46,34 @@ const Header = React.forwardRef((props, ref) => {
 					</button>
 				</nav>
 			</div>
-			<button to="#" className="hamburger">
-				{sidebar ? (
-					<FontAwesomeIcon icon={faX} onClick={showSidebar} />
-				) : (
-					<FontAwesomeIcon icon={faBarsStaggered} onClick={showSidebar} />
-				)}
-			</button>
-			<div className={sidebar ? "mobile-header-on" : "mobile-header-off"}>
+
+			<div className="mobile-header">
+				<a href="http://localhost:3000/" className="logo">
+					VP
+				</a>
+				<button to="#" className="hamburger">
+					{showNavMenu ? (
+						<FontAwesomeIcon icon={faX} onClick={toggleNavMenu} />
+					) : (
+						<FontAwesomeIcon icon={faBarsStaggered} onClick={toggleNavMenu} />
+					)}
+				</button>
+			</div>
+
+			<div className={showNavMenu ? "mobile-menu-active" : "mobile-menu-inactive"}>
 				<nav className="menu-items">
 					<ul className="menu-items-list">
-						<li className="nav-link" onClick={closeMenu}>
+						<li className="nav-link" onClick={toggleNavMenu}>
 							<button className="header-item" onClick={props.aboutClick}>
 								<span>About</span>
 							</button>
 						</li>
-						<li className="nav-link" onClick={closeMenu}>
+						<li className="nav-link" onClick={toggleNavMenu}>
 							<button className="header-item" onClick={props.projectsClick}>
 								<span>Projects</span>
 							</button>
 						</li>
-						<li className="nav-link" onClick={closeMenu}>
+						<li className="nav-link" onClick={toggleNavMenu}>
 							<button className="header-item" onClick={props.contactClick}>
 								<span>Contact</span>
 							</button>
