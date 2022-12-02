@@ -1,7 +1,7 @@
 import React from "react";
 import resume from "./Resume.PDF";
 // import { FiGithub } from "react-icons/fi";
-import "./Svg.css";
+import "./Footer.css";
 
 const Footer = () => {
 	const openInNewTab = (url) => {
@@ -9,8 +9,8 @@ const Footer = () => {
 	};
 
 	return (
-		<div className="svg-main">
-			<div className="svg-container">
+		<div className="footer-main">
+			<div className="footer-container">
 				<a href={resume} target="__blank">
 					<svg
 						className="cv-svg"
@@ -48,6 +48,7 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className="line"></div>
+
 			<div className="sentence-container">
 				<h2 className="sentence">
 					Designed and Built by <br></br> Vivianie Price

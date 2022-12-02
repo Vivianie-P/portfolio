@@ -52,7 +52,7 @@ body {
 	/* margin: 0 auto; */
 	/* gap: 15rem; */
 	margin: 0px auto;
-	padding: 100px 100px;
+	padding: 20px 100px;
 	max-width: 1000px;
 	z-index: -1;
 }
@@ -100,7 +100,7 @@ body {
 		width: 100%;
 	}
 
-	.desktop-svg {
+	.desktop-footer {
 		display: flex;
 		width: 90px;
 		position: fixed;
@@ -111,7 +111,7 @@ body {
 		height: 40vh;
 	}
 
-	.mobile-svg {
+	.mobile-footer {
 		display: none;
 	}
 }
@@ -125,7 +125,7 @@ body {
 		display: none;
 	}
 
-	.desktop-svg {
+	.desktop-footer {
 		display: none;
 	}
 

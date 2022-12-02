@@ -59,6 +59,11 @@
 	transform: scale(1.04);
 }
 
+.desktop-sentence-container,
+.desktop-sentence {
+	display: none;
+}
+
 @media screen and (min-width: 800px) {
 	.contact-me-title {
 		font-size: 5rem;
@@ -79,5 +84,20 @@
 	.mailto {
 		font-size: 2.2rem;
 		width: 25%;
+	}
+
+	.desktop-sentence-container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+	}
+
+	.desktop-sentence {
+		display: flex;
+		font-family: "Varela Round", sans-serif;
+		font-weight: 400;
+		font-size: 1.8rem;
+		margin-top: 3rem;
 	}
 }

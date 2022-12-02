@@ -7,7 +7,7 @@ import Home from "./Components/Home.jsx";
 import AboutMe from "./Components/AboutMe.jsx";
 import Projects from "./Components/Projects.jsx";
 import ContactMe from "./Components/ContactMe.jsx";
-import Svg from "./Components/Svg.jsx";
+import Footer from "./Components/Footer.jsx";
 
 const StyledApp = styled.div`
 	color: ${(props) => props.theme.fontColor};
@@ -44,8 +44,8 @@ function App() {
 						/>
 					</div>
 					<div className="main">
-						<div className="desktop-svg">
-							<Svg />
+						<div className="desktop-footer">
+							<Footer />
 						</div>
 						<div className="right-side-menu">
 							<a className="secondary-mailto" href="mailto:vivianieprice@gmail.com">
@@ -65,8 +65,8 @@ function App() {
 							<div ref={contactRef}>
 								<ContactMe />
 							</div>
-							<div className="mobile-svg">
-								<Svg />
+							<div className="mobile-footer">
+								<Footer />
 							</div>
 						</div>
 					</div>

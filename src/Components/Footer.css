@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;500&display=swap");
 
-.svg-main {
+.footer-main {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -8,7 +8,7 @@
 	padding: 2rem 2rem;
 }
 
-.svg-container {
+.footer-container {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
@@ -59,19 +59,18 @@
 }
 
 @media screen and (min-width: 800px) {
-	.svg-main {
+	.footer-main {
 		padding: 0;
 	}
 
-	.svg-container {
+	.footer-container {
 		flex-direction: column;
 		height: 20vh;
 		margin-top: 6rem;
 	}
 
-	.sentence-container {
-		position: fixed;
-		left: 0;
-		bottom: 30px;
+	.sentence-container,
+	.sentence {
+		display: none;
 	}
 }
