@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.body};
 	}
 
-	h1  {
+	h1, .card__title, .card__description, .card__btn  {
 		color:${(props) => props.theme.fontText}
 	}
 

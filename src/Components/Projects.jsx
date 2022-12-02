@@ -55,7 +55,9 @@ function Card(props) {
 					</a>
 				</div>
 			</div>
-			<img className="card__image" src={props.img} alt="" />
+			<div className="image-container">
+				<img className="card__image" src={props.img} alt="" />
+			</div>
 		</div>
 	);
 }
