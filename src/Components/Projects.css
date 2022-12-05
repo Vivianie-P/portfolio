@@ -48,6 +48,10 @@
 	object-fit: contain;
 }
 
+/* .project-details {
+	grid-area: 1 / 1 / 2 / 2;
+} */
+
 .card__title {
 	font-size: 2.5rem;
 	padding: 1rem;

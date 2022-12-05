@@ -9,23 +9,22 @@ const Projects = () => {
 			</div>
 			<div className="projects-container">
 				<Card
-					title="URL Shortener App"
-					description="This project is a URL shortening app that takes in the user's external URL link and shortens the link. The tech stack used to complete this project were JavaScript, CSS, & React.
-					"
+					title="Shortly"
+					description="Shortly is a URL shortening app that takes in the user's external URL link and shortens the link. It allows the user to delete old URL links and keep the ones they would like. "
 					img={require("./URL.jpg")}
 					gitLink="https://github.com/Vivianie-P/URL-Project"
 				/>
 
 				<Card
 					title="Sunnyside Landing Page"
-					description="This is a colorful landing page with and interactive elements."
+					description="This is a colorful landing page with and interactive elements. This landing page informs the user of this full-service creative agency that "
 					img={require("./sunnyside-lp.jpg")}
 					gitLink="https://github.com/Vivianie-P/sunnyside-lp"
 				/>
 
 				<Card
 					title="To Do App"
-					description="This a To Do app that helps the user create, add, delete, and cross out to do's."
+					description="This a To Do app that helps the user create, add, delete, and cross out to do's. "
 					img={require("./to-do.jpg")}
 					gitLink="https://github.com/Vivianie-P/to-do-app"
 				/>

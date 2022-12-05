@@ -8,13 +8,12 @@
 	width: calc(100% - 12px);
 	display: flex;
 	justify-content: space-between;
-	padding: 1rem 2.5rem;
+	padding: 1rem 3rem;
 	position: fixed;
 	height: 60px;
 	top: 6px;
 	box-shadow: rgba(40, 38, 38, 0.541) 0px 1px 10px 0px;
 	z-index: 20;
-	padding: 0px;
 }
 
 .mobile-menu-inactive {
