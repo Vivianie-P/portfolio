@@ -12,8 +12,9 @@ body {
 	border: 6px solid;
 	border-image-source: linear-gradient(
 		43deg,
-		rgba(170, 134, 99, 1) 47%,
-		rgba(180, 106, 85, 1) 62%
+		rgba(93, 69, 62, 1) 25%,
+		rgba(180, 106, 85, 1) 57%,
+		rgba(170, 134, 99, 1) 74%
 	);
 	border-image-slice: 1;
 }

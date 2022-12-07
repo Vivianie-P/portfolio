@@ -16,10 +16,22 @@
 .projects-container {
 	display: grid;
 	justify-content: center;
-	color: #b46a55;
+	/* color: #b46a55; */
 	gap: 3rem;
 	width: 88%;
 	margin: 0 auto;
+}
+
+.card:nth-child(1) {
+	background-image: url(URL.jpg);
+}
+
+.card:nth-child(2) {
+	background-image: url(sunnyside-lp.jpg);
+}
+
+.card:nth-child(3) {
+	background-image: url(to-do.jpg);
 }
 
 .card {
@@ -29,14 +41,16 @@
 	justify-content: space-between;
 	width: 100%;
 	border-radius: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .card-inner-info {
 	display: flex;
 	flex-direction: column;
-	background-color: #c0976f;
+	/* background-color: #c0976f; */
 	/* background-color: #f1e3cf; */
-	/* background-color: #c57e52b8; */
 }
 
 .card__image {
@@ -46,11 +60,8 @@
 .card__image__mobile {
 	width: 100%;
 	object-fit: contain;
+	display: none;
 }
-
-/* .project-details {
-	grid-area: 1 / 1 / 2 / 2;
-} */
 
 .card__title {
 	font-size: 2.5rem;
@@ -114,6 +125,12 @@
 		border-top-left-radius: 5px;
 		border-bottom-right-radius: 0;
 	} */
+
+	.card:nth-child(1),
+	.card:nth-child(2),
+	.card:nth-child(3) {
+		background-image: none;
+	}
 
 	.card {
 		flex-direction: row;
