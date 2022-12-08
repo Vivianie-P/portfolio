@@ -47,7 +47,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.backgroundColor};
 	}
 
-	.project-details{
+	.project-details {
 		background-color: ${(props) => props.theme.projectBkgrdColor};
 	}
 
