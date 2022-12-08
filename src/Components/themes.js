@@ -7,7 +7,8 @@ export const lightTheme = {
 	fontText: "#2f3338",
 	scrollBar: "#2f3338",
 	backgroundColor: "#f1e3cf",
-	// mobileBkgrdColor:
+	projectBkgrdColor: "7f5832ba",
+	projectFont: "#2f3338",
 };
 
 export const darkTheme = {
@@ -17,6 +18,8 @@ export const darkTheme = {
 	fontText: "#f1e3cf",
 	scrollBar: "#f1e3cf",
 	backgroundColor: "#2f3338",
+	projectBkgrdColor: "7f5832d6",
+	projectFont: "#ffe1b7",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -24,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.body};
 	}
 
-	h1, .card__title, .card__description, .card__btn  {
+	h1 {
 		color:${(props) => props.theme.fontText}
 	}
 
@@ -32,8 +35,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color:${(props) => props.theme.scrollBar} 
 	}
 
-
-	p, h2, a, .light-dark, .header-item, .logo, .line, .hamburger{
+	h2, p, a, .light-dark, .header-item, .logo, .line, .hamburger{
 		color:${(props) => props.theme.fontColor};
 	}
 
@@ -43,5 +45,13 @@ export const GlobalStyles = createGlobalStyle`
 
 	.mobile-header, .desktop-header, .menu-items {
 		background-color: ${(props) => props.theme.backgroundColor};
+	}
+
+	.project-details{
+		background-color: ${(props) => props.theme.projectBkgrdColor};
+	}
+
+	.card__title, .card__description, .card__btn{
+		projectFont:${(props) => props.theme.projectFont};
 	}
 `;

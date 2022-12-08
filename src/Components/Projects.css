@@ -22,35 +22,25 @@
 	margin: 0 auto;
 }
 
-.card:nth-child(1) {
-	background-image: url(URL.jpg);
-}
-
-.card:nth-child(2) {
-	background-image: url(sunnyside-lp.jpg);
-}
-
-.card:nth-child(3) {
-	background-image: url(to-do.jpg);
-}
-
 .card {
-	overflow: hidden;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	width: 100%;
+	overflow: hidden;
 	border-radius: 5px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .card-inner-info {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	/* background-color: #c0976f; */
 	/* background-color: #f1e3cf; */
+}
+
+.project-details {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	/* background-color: #7f5832d6; */
+	grid-area: 1/1;
 }
 
 .card__image {
@@ -60,7 +50,9 @@
 .card__image__mobile {
 	width: 100%;
 	object-fit: contain;
-	display: none;
+	grid-area: 1/1;
+	filter: blur(2px);
+	z-index: -1;
 }
 
 .card__title {
@@ -87,7 +79,7 @@
 	font-size: 1.8rem;
 	margin: 1rem auto;
 	/* background-color: #b46a55; */
-	background: rgba(180, 106, 85, 0.2);
+	background: #b08e6a;
 	border-radius: 5px;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
@@ -137,13 +129,6 @@
 		width: 100%;
 		background: #c4a88a;
 		border-radius: 5px;
-	}
-
-	.card__title,
-	.card__description,
-	.card__btn {
-		/* color: #f1e3cf; */
-		color: #4e1804;
 	}
 
 	.card__title {
