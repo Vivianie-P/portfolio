@@ -17,6 +17,7 @@ body {
 		rgba(170, 134, 99, 1) 74%
 	);
 	border-image-slice: 1;
+	overflow-x: hidden;
 }
 
 .side-menu {
@@ -66,12 +67,10 @@ body {
 		align-items: center;
 		justify-content: center;
 		width: 50px;
-		position: fixed;
-		bottom: -60px;
+		position: absolute;
+		bottom: 6px;
 		left: auto;
 		right: 30px;
-		z-index: 10;
-		height: 40vh;
 	}
 
 	.secondary-mailto {
@@ -104,12 +103,11 @@ body {
 	.desktop-footer {
 		display: flex;
 		width: 90px;
-		position: fixed;
-		bottom: -60px;
+		position: absolute;
+		bottom: 6px;
 		left: 30px;
 		right: auto;
-		z-index: 10;
-		height: 40vh;
+		overflow-x: hidden;
 	}
 
 	.mobile-footer {

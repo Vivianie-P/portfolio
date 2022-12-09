@@ -7,7 +7,7 @@ export const lightTheme = {
 	fontText: "#2f3338",
 	scrollBar: "#2f3338",
 	backgroundColor: "#f1e3cf",
-	projectBkgrdColor: "7f5832ba",
+	projectBkgrdColor: "#c99460ba",
 	projectFont: "#2f3338",
 };
 
@@ -18,7 +18,7 @@ export const darkTheme = {
 	fontText: "#f1e3cf",
 	scrollBar: "#f1e3cf",
 	backgroundColor: "#2f3338",
-	projectBkgrdColor: "7f5832d6",
+	projectBkgrdColor: "#7f5832d6",
 	projectFont: "#ffe1b7",
 };
 
@@ -52,6 +52,6 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
 	.card__title, .card__description, .card__btn{
-		projectFont:${(props) => props.theme.projectFont};
+		color:${(props) => props.theme.projectFont};
 	}
 `;

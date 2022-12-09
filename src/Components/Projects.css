@@ -49,10 +49,11 @@
 
 .card__image__mobile {
 	width: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	grid-area: 1/1;
-	filter: blur(2px);
+	filter: blur(10px);
 	z-index: -1;
+	height: 100%;
 }
 
 .card__title {
