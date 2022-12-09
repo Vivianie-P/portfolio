@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import "./Header.css";
-// import { button } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBarsStaggered,

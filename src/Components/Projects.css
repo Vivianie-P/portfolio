@@ -16,7 +16,6 @@
 .projects-container {
 	display: grid;
 	justify-content: center;
-	/* color: #b46a55; */
 	gap: 3rem;
 	width: 88%;
 	margin: 0 auto;
@@ -31,15 +30,12 @@
 
 .card-inner-info {
 	display: grid;
-	/* background-color: #c0976f; */
-	/* background-color: #f1e3cf; */
 }
 
 .project-details {
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
-	/* background-color: #7f5832d6; */
 	grid-area: 1/1;
 }
 
@@ -79,19 +75,19 @@
 	padding: 1rem;
 	font-size: 1.8rem;
 	margin: 1rem auto;
-	/* background-color: #b46a55; */
 	background: #b08e6a;
 	border-radius: 5px;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
-	width: 70%;
+	min-width: 70%;
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
+	border: 0.2px solid #9f7d4e;
 }
 
 .card__btn:hover {
-	background: rgba(180, 106, 85, 0.6);
+	background: #edba84c0;
 	transform: scale(1.04);
 }
 
@@ -114,26 +110,19 @@
 		gap: 7rem;
 	}
 
-	/* .project-details {
-		border-top-left-radius: 5px;
-		border-bottom-right-radius: 0;
-	} */
-
-	.card:nth-child(1),
-	.card:nth-child(2),
-	.card:nth-child(3) {
-		background-image: none;
+	.project-details {
+		padding: 2rem;
 	}
 
 	.card {
 		flex-direction: row;
 		width: 100%;
-		background: #c4a88a;
 		border-radius: 5px;
 	}
 
 	.card__title {
 		font-size: 3rem;
+		padding: 0;
 	}
 
 	.card__image__mobile {
@@ -149,18 +138,15 @@
 	.image-container:hover {
 		mix-blend-mode: normal;
 		filter: none;
-		transition: 0.4s ease;
+		transition: 1s ease;
 	}
 
 	.card__image {
 		display: block;
-		/* border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px; */
 		height: 100%;
 		float: right;
 		width: 100%;
 		padding: 0;
-		object-fit: cover;
 	}
 
 	.card__image:hover {
@@ -175,17 +161,17 @@
 		flex-direction: column;
 		width: 60%;
 		float: left;
-		background-color: #b08e6a;
+		/* background-color: #b08e6a; */
 	}
 
 	.card__description {
 		display: flex;
 		font-size: 2rem;
+		padding: 2rem 0.5rem;
 	}
 
 	.card__btn {
 		font-size: 2rem;
 		margin: 0 auto;
-		width: 45%;
 	}
 }

@@ -17,14 +17,14 @@ const Projects = () => {
 
 				<Card
 					title="Sunnyside Landing Page"
-					description="This is a colorful landing page with and interactive elements. This landing page informs the user of this full-service creative agency that "
+					description="This is a landing page for a full-service creative agency that specializes in helping brands grow. I created this website using the frontend tools I know."
 					img={require("./sunnyside-lp.jpg")}
 					gitLink="https://github.com/Vivianie-P/sunnyside-lp"
 				/>
 
 				<Card
 					title="To Do App"
-					description="This a To Do app that helps the user create, add, delete, and cross out to do's. "
+					description="This a To Do app that helps with creating, adding, deleting, and crossing out to do's. Anyone can use this app to stay on track of their tasks.  "
 					img={require("./to-do.jpg")}
 					gitLink="https://github.com/Vivianie-P/to-do-app"
 				/>

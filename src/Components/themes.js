@@ -8,7 +8,8 @@ export const lightTheme = {
 	scrollBar: "#2f3338",
 	backgroundColor: "#f1e3cf",
 	projectBkgrdColor: "#c99460ba",
-	projectFont: "#2f3338",
+	projectFont: "#3e0e00",
+	cardBackground: "#c4a88a",
 };
 
 export const darkTheme = {
@@ -20,6 +21,7 @@ export const darkTheme = {
 	backgroundColor: "#2f3338",
 	projectBkgrdColor: "#7f5832d6",
 	projectFont: "#ffe1b7",
+	cardBackground: "#b8804a6b",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -47,11 +49,19 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.backgroundColor};
 	}
 
-	.project-details {
-		background-color: ${(props) => props.theme.projectBkgrdColor};
-	}
-
 	.card__title, .card__description, .card__btn{
 		color:${(props) => props.theme.projectFont};
+	}
+
+	@media screen and (max-width: 800px) {
+		.project-details {
+			background-color: ${(props) => props.theme.projectBkgrdColor};
+		}
+	}
+
+	@media screen and (min-width: 800px){
+		.card{
+			background: ${(props) => props.theme.cardBackground};
+		}
 	}
 `;

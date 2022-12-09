@@ -1,6 +1,5 @@
 import React from "react";
 import resume from "./Resume.PDF";
-// import { FiGithub } from "react-icons/fi";
 import "./Footer.css";
 
 const Footer = () => {
@@ -14,7 +13,6 @@ const Footer = () => {
 				<a href={resume} target="__blank">
 					<svg
 						className="cv-svg"
-						// fill="#b46a55"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 80 80"
 					>
@@ -26,7 +24,6 @@ const Footer = () => {
 					<svg
 						className="github-svg"
 						onClick={() => openInNewTab("https://github.com/Vivianie-P")}
-						// fill="#b46a55"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 16 16"
 					>
@@ -39,7 +36,6 @@ const Footer = () => {
 						onClick={() =>
 							openInNewTab("https://www.linkedin.com/in/vivianie-price-889802138/")
 						}
-						// fill="#b46a55"
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 96 96"
 					>
