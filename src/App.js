@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./Components/themes.js";
 import Header from "./Components/Header.jsx";
@@ -15,18 +15,29 @@ const StyledApp = styled.div`
 `;
 
 function App() {
-	const [theme, setTheme] = useState("dark");
+	const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 	const themeToggler = () => {
-		theme === "dark" ? setTheme("light") : setTheme("dark");
+		if (theme === "dark") {
+			setTheme("light");
+			localStorage.setItem("theme", "light");
+		} else {
+			setTheme("dark");
+			localStorage.setItem("theme", "dark");
+		}
 	};
 
 	const aboutRef = useRef(null);
 	const projectsRef = useRef(null);
 	const contactRef = useRef(null);
+	const introRef = useRef(null);
 
 	const handleClick = (ref) => {
 		ref.current?.scrollIntoView({ behavior: "smooth" });
 	};
+
+	useEffect(() => {
+		localStorage.setItem("theme", theme);
+	});
 
 	return (
 		<ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
@@ -41,6 +52,7 @@ function App() {
 							aboutClick={() => handleClick(aboutRef)}
 							projectsClick={() => handleClick(projectsRef)}
 							contactClick={() => handleClick(contactRef)}
+							logoClick={() => handleClick(introRef)}
 						/>
 					</div>
 					<div className="main">
@@ -55,7 +67,9 @@ function App() {
 						</div>
 
 						<div className="component-container">
-							<Home />
+							<div ref={introRef}>
+								<Home />
+							</div>
 							<div ref={aboutRef}>
 								<AboutMe />
 							</div>

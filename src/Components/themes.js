@@ -8,8 +8,9 @@ export const lightTheme = {
 	scrollBar: "#2f3338",
 	backgroundColor: "#f1e3cf",
 	projectBkgrdColor: "#c99460ba",
-	projectFont: "#3e0e00",
-	cardBackground: "#c4a88a",
+	projectFont: "#533127",
+	cardBtn: "#311c16",
+	cardTitle: "#311c16",
 };
 
 export const darkTheme = {
@@ -20,8 +21,9 @@ export const darkTheme = {
 	scrollBar: "#f1e3cf",
 	backgroundColor: "#2f3338",
 	projectBkgrdColor: "#7f5832d6",
-	projectFont: "#ffe1b7",
-	cardBackground: "#b8804a6b",
+	projectFont: "#f5debd",
+	cardBtn: "#f1e3cf",
+	cardTitle: "#f1e3cf",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -49,19 +51,21 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.backgroundColor};
 	}
 
-	.card__title, .card__description, .card__btn{
+	.card__title{
+		color:${(props) => props.theme.cardTitle};
+	}
+
+	.card__description{
 		color:${(props) => props.theme.projectFont};
+	}
+
+	.card__btn{
+		fill:${(props) => props.theme.cardBtn};
 	}
 
 	@media screen and (max-width: 800px) {
 		.project-details {
 			background-color: ${(props) => props.theme.projectBkgrdColor};
-		}
-	}
-
-	@media screen and (min-width: 800px){
-		.card{
-			background: ${(props) => props.theme.cardBackground};
 		}
 	}
 `;

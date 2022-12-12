@@ -15,9 +15,9 @@ const Header = React.forwardRef((props) => {
 	return (
 		<div className="header-main">
 			<div className="desktop-header">
-				<a href="http://localhost:3000/" className="logo">
+				<button onClick={props.logoClick} className="logo">
 					VP
-				</a>
+				</button>
 				<nav className="desktop-nav">
 					<ul className="menu-items">
 						<li className="nav-link">
@@ -47,9 +47,9 @@ const Header = React.forwardRef((props) => {
 			</div>
 
 			<div className="mobile-header">
-				<a href="http://localhost:3000/" className="logo">
+				<button onClick={props.logoClick} className="logo">
 					VP
-				</a>
+				</button>
 				<button to="#" className="hamburger">
 					{showNavMenu ? (
 						<FontAwesomeIcon icon={faX} onClick={toggleNavMenu} />

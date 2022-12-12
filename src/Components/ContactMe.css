@@ -40,7 +40,6 @@
 }
 
 .mailto {
-	/* background-color: #b46a55; */
 	background: rgba(180, 106, 85, 0.2);
 	border-radius: 5px;
 	width: 60%;
@@ -67,6 +66,10 @@
 }
 
 @media screen and (min-width: 800px) {
+	.contact-me-container {
+		height: 50vh;
+	}
+
 	.contact-me-title {
 		font-size: 5rem;
 		display: flex;
