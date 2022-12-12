@@ -7,6 +7,7 @@
 	font-family: "Shrikhand", cursive;
 	font-weight: 400;
 	margin: 0;
+	padding-bottom: 2rem;
 }
 
 .projects-container {
@@ -21,21 +22,17 @@
 	display: flex;
 	width: 100%;
 	overflow: hidden;
-	border-radius: 5px;
 }
 
 .card-inner-info {
 	display: grid;
-	border-radius: 5px;
 }
 
 .project-details {
 	display: flex;
-	justify-content: space-evenly;
 	flex-direction: column;
 	grid-area: 1/1;
 	padding: 2rem;
-	border-radius: 5px;
 }
 
 .card__image {
@@ -49,7 +46,6 @@
 	filter: blur(10px);
 	z-index: -1;
 	height: 100%;
-	border-radius: 5px;
 }
 
 .card__title {
@@ -57,6 +53,9 @@
 	text-align: left;
 	font-family: "Lexend Deca", sans-serif;
 	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 .card__description {
@@ -67,7 +66,7 @@
 }
 
 .card__btn {
-	height: 2rem;
+	height: 1.6rem;
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
@@ -109,7 +108,7 @@
 	.project-details {
 		padding: 0 2rem;
 		height: 100%;
-		justify-content: center;
+		/* justify-content: center; */
 	}
 
 	.card {
@@ -122,10 +121,13 @@
 		text-align: center;
 	}
 
+	.card__title:nth-child(even) {
+		margin: 0 auto;
+	}
+
 	.card__title {
 		font-size: 3rem;
 		padding: 0;
-		text-align: inherit;
 	}
 
 	.card__image__mobile {
