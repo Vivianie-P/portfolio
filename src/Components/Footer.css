@@ -2,16 +2,16 @@
 
 .footer-main {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	flex-direction: column;
 	padding: 2rem 2rem;
 	width: 100%;
+	align-items: center;
 }
 
 .footer-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 3rem;
 	align-items: center;
 	width: 100%;
 }
@@ -20,7 +20,7 @@
 .github-svg,
 .linkedin-svg {
 	display: flex;
-	height: 2.5rem;
+	height: 2rem;
 	padding: 0;
 	margin: 0 auto;
 }
@@ -49,8 +49,8 @@
 	display: flex;
 	font-family: "Varela Round", sans-serif;
 	font-weight: 400;
-	font-size: 1.8rem;
-	margin-top: 3rem;
+	font-size: 1.6rem;
+	margin-top: 1.6rem;
 }
 
 @media screen and (max-width: 800px) {

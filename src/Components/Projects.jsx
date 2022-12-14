@@ -40,7 +40,9 @@ function Card(props) {
 	return (
 		<div className="card">
 			<div className="card-inner-info">
-				<img className="card__image__mobile" src={props.img} alt="" />
+				<div className="mobile-card-image-container">
+					<img className="card__image__mobile" src={props.img} alt="" />
+				</div>
 				<div className="project-details">
 					<h2 className="card__title">
 						{props.title}{" "}

@@ -2,6 +2,7 @@
 
 .contact-me-container {
 	margin-top: 20rem;
+	margin-bottom: 10rem;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -24,7 +25,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
-	width: 88%;
+	width: 70%;
 	margin: 0 auto;
 	height: 20rem;
 }

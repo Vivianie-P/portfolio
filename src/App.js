@@ -79,10 +79,10 @@ function App() {
 							<div ref={contactRef}>
 								<ContactMe />
 							</div>
-							<div className="mobile-footer">
-								<Footer />
-							</div>
 						</div>
+					</div>
+					<div className="mobile-footer">
+						<Footer />
 					</div>
 				</div>
 			</StyledApp>

@@ -8,15 +8,15 @@ body {
 	width: 100vw;
 	overflow: hidden;
 	overflow-y: scroll;
-	height: 100vh;
-	border: 6px solid;
+
+	/* border: 6px solid;
 	border-image-source: linear-gradient(
 		43deg,
 		rgba(93, 69, 62, 1) 25%,
 		rgba(180, 106, 85, 1) 57%,
 		rgba(170, 134, 99, 1) 74%
 	);
-	border-image-slice: 1;
+	border-image-slice: 1; */
 	overflow-x: hidden;
 }
 
