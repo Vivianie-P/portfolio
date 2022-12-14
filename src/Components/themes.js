@@ -31,9 +31,9 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.body};
 	}
 
-	.home-title {
-		background:${(props) => props.theme.fontText}
-	}
+	// .home-title {
+	// 	background:${(props) => props.theme.fontText}
+	// }
 
 	*::-webkit-scrollbar-thumb{
 		background-color:${(props) => props.theme.scrollBar} 
