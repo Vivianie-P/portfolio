@@ -89,12 +89,27 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	font-size: 4rem;
+	font-size: 5rem;
 	background: none;
 	cursor: pointer;
 	border: none;
 	padding: 0;
-	transition: transform 0.6s, opacity 0.8s, top 0.6s;
+	background: linear-gradient(
+			43deg,
+			rgba(175, 118, 63, 1) 0%,
+			rgba(218, 184, 138, 1) 30%,
+			rgba(156, 107, 93, 1) 50%,
+			rgba(218, 184, 138, 1) 70%,
+			rgba(175, 118, 63, 1) 100%
+		)
+		0 0 / 400% 100%;
+	background-size: 400%;
+	background-repeat: repeat;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: move-bg 30s infinite linear;
+	--bg-size: 400%;
 }
 
 .light-dark {

@@ -11,7 +11,8 @@
 	height: 100vh;
 }
 
-.home-title {
+.home-title,
+.home-title-light {
 	letter-spacing: 0.5rem;
 	text-align: center;
 	font-size: 3.2rem;
@@ -19,13 +20,10 @@
 	margin: 0;
 
 	--bg-size: 400%;
-	background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(235, 215, 188, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(235, 215, 188, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
+	background: radial-gradient(
+			circle,
+			rgba(68, 69, 70, 1) 0%,
+			rgba(192, 151, 111, 1) 100%
 		)
 		0 0 / 400% 100%;
 	-webkit-text-fill-color: transparent;
@@ -35,25 +33,35 @@
 	animation: move-bg 30s infinite linear;
 }
 
-.underline {
-	background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(235, 215, 188, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(235, 215, 188, 1) 70%,
+.home-title-light {
+	background: radial-gradient(
+			circle,
+			rgba(47, 51, 56, 1) 0%,
 			rgba(175, 118, 63, 1) 100%
 		)
 		0 0 / 400% 100%;
-	/* -webkit-text-fill-color: transparent;
-	color: transparent;
+
 	background-clip: text;
 	-webkit-background-clip: text;
+}
+
+.underline {
+	--bg-size: 400%;
+	background: linear-gradient(
+			43deg,
+			rgba(175, 118, 63, 1) 0%,
+			rgba(218, 184, 138, 1) 30%,
+			rgba(156, 107, 93, 1) 50%,
+			rgba(218, 184, 138, 1) 70%,
+			rgba(175, 118, 63, 1) 100%
+		)
+		0 0 / 400% 100%;
+	-webkit-text-fill-color: transparent;
 	animation: move-bg 30s infinite linear;
-	--bg-size: 400%; */
-	border: solid 5px;
+	height: 5px;
 	border-radius: 5px;
-	width: 50%;
+	width: 25%;
+	margin: 1rem auto 2rem;
 }
 
 .home-ppg {
@@ -65,7 +73,8 @@
 }
 
 @media screen and (min-width: 800px) {
-	.home-title {
+	.home-title,
+	.home-title-light {
 		font-size: 6.5rem;
 	}
 

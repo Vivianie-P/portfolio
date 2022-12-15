@@ -52,9 +52,11 @@ const Header = React.forwardRef((props) => {
 				</button>
 				<button to="#" className="hamburger">
 					{showNavMenu ? (
-						<FontAwesomeIcon icon={faX} onClick={toggleNavMenu} />
+						// <FontAwesomeIcon icon={faX} onClick={toggleNavMenu} />
+						<span onClick={toggleNavMenu}> {">"} </span>
 					) : (
-						<FontAwesomeIcon icon={faBarsStaggered} onClick={toggleNavMenu} />
+						// <FontAwesomeIcon icon={faBarsStaggered} onClick={toggleNavMenu} />
+						<span onClick={toggleNavMenu}> {"<"} </span>
 					)}
 				</button>
 			</div>

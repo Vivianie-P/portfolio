@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
 
-const home = () => {
+const Home = (props) => {
 	return (
 		<div className="home-main" id="/">
-			<h1 className="home-title">
+			<h1
+				className={props.currTheme === "dark" ? "home-title" : "home-title-light"}
+			>
 				Hello, I'm <br /> Vivianie Price
 			</h1>
 			<div className="underline"></div>
@@ -16,4 +18,4 @@ const home = () => {
 	);
 };
 
-export default home;
+export default Home;

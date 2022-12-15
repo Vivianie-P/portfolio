@@ -65,8 +65,8 @@ body {
 		align-items: center;
 		justify-content: center;
 		width: 35px;
-		position: absolute;
-		bottom: 6px;
+		position: fixed;
+		bottom: 0px;
 		left: auto;
 		right: 30px;
 	}
@@ -104,8 +104,8 @@ body {
 	.desktop-footer {
 		display: flex;
 		width: 90px;
-		position: absolute;
-		bottom: 6px;
+		position: fixed;
+		bottom: 0px;
 		left: 30px;
 		right: auto;
 		overflow-x: hidden;
@@ -117,6 +117,31 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+	.logo {
+		--bg-size: 400%;
+		background: linear-gradient(
+				43deg,
+				rgba(175, 118, 63, 1) 0%,
+				rgba(218, 184, 138, 1) 30%,
+				rgba(156, 107, 93, 1) 50%,
+				rgba(218, 184, 138, 1) 70%,
+				rgba(175, 118, 63, 1) 100%
+			)
+			0 0 / 400% 100%;
+		background-size: 400%;
+		background-repeat: repeat;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: move-bg 30s infinite linear;
+	}
+
+	@keyframes move-bg {
+		to {
+			background-position: var(--bg-size) 0;
+		}
+	}
+
 	.side-menu {
 		display: none;
 	}

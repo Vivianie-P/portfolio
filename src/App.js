@@ -68,7 +68,7 @@ function App() {
 
 						<div className="component-container">
 							<div ref={introRef}>
-								<Home />
+								<Home currTheme={theme} />
 							</div>
 							<div ref={aboutRef}>
 								<AboutMe />

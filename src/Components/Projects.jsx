@@ -7,6 +7,7 @@ const Projects = () => {
 			<div className="projects-title-container">
 				<h1 className="projects-title">Projects</h1>
 			</div>
+			<div className="underline"></div>
 			<div className="projects-container">
 				<Card
 					title="Shortly"

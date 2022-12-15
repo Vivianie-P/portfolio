@@ -5,6 +5,7 @@ function AboutMe() {
 	return (
 		<div className="aboutme-main">
 			<h1 className="aboutme-title">About</h1>
+			<div className="underline"></div>
 			<p className="aboutme-ppg">
 				My interest in web devlopment started back in 2020 after graduating in the
 				middle of the pandemic. The job market for psychology majors weren't very

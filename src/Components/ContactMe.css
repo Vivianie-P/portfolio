@@ -19,6 +19,18 @@
 	font-family: "Shrikhand", cursive;
 	font-weight: 400;
 	font-size: 3.5rem;
+	--bg-size: 400%;
+	background: radial-gradient(
+			circle,
+			rgba(47, 51, 56, 1) 0%,
+			rgba(192, 151, 111, 1) 100%
+		)
+		0 0 / 400% 100%;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: move-bg 30s infinite linear;
 }
 
 .inner-container {
