@@ -1,10 +1,16 @@
 import React from "react";
 import "./ContactMe.css";
 
-function ContactMe() {
+function ContactMe(props) {
 	return (
 		<div className="contact-me-container" id="contact-me">
-			<h1 className="contact-me-title">Let's network</h1>
+			<h1
+				className={
+					props.currTheme === "dark" ? "contact-me-title" : "contact-me-title-light"
+				}
+			>
+				Let's network
+			</h1>
 			<div className="underline"></div>
 			<div className="inner-container">
 				<p className="subtitle">

@@ -1,10 +1,16 @@
 import React from "react";
 import "./AboutMe.css";
 
-function AboutMe() {
+function AboutMe(props) {
 	return (
 		<div className="aboutme-main">
-			<h1 className="aboutme-title">About</h1>
+			<h1
+				className={
+					props.currTheme === "dark" ? "aboutme-title" : "aboutme-title-light"
+				}
+			>
+				About
+			</h1>
 			<div className="underline"></div>
 			<p className="aboutme-ppg">
 				My interest in web devlopment started back in 2020 after graduating in the

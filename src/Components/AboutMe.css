@@ -13,7 +13,8 @@
 	margin-bottom: 20rem;
 }
 
-.aboutme-title {
+.aboutme-title,
+.aboutme-title-light {
 	letter-spacing: 0.5rem;
 	text-align: center;
 	font-size: 3.5rem;
@@ -22,7 +23,7 @@
 	--bg-size: 400%;
 	background: radial-gradient(
 			circle,
-			rgba(47, 51, 56, 1) 0%,
+			rgba(68, 69, 70, 1) 0%,
 			rgba(192, 151, 111, 1) 100%
 		)
 		0 0 / 400% 100%;
@@ -31,6 +32,18 @@
 	background-clip: text;
 	-webkit-background-clip: text;
 	animation: move-bg 30s infinite linear;
+}
+
+.aboutme-title-light {
+	background: radial-gradient(
+			circle,
+			rgba(47, 51, 56, 1) 0%,
+			rgba(175, 118, 63, 1) 100%
+		)
+		0 0 / 400% 100%;
+
+	background-clip: text;
+	-webkit-background-clip: text;
 }
 
 .aboutme-ppg {
@@ -83,7 +96,8 @@
 		height: 100vh;
 	}
 
-	.aboutme-title {
+	.aboutme-title,
+	.aboutme-title-light {
 		font-size: 5rem;
 	}
 

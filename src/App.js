@@ -71,13 +71,13 @@ function App() {
 								<Home currTheme={theme} />
 							</div>
 							<div ref={aboutRef}>
-								<AboutMe />
+								<AboutMe currTheme={theme} />
 							</div>
 							<div ref={projectsRef}>
-								<Projects />
+								<Projects currTheme={theme} />
 							</div>
 							<div ref={contactRef}>
-								<ContactMe />
+								<ContactMe currTheme={theme} />
 							</div>
 						</div>
 					</div>

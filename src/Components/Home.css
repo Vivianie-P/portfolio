@@ -83,6 +83,11 @@
 		flex-wrap: wrap;
 		font-size: 3.2rem;
 	}
+
+	.underline {
+		width: 22%;
+		margin: 1rem auto 4rem;
+	}
 }
 
 @keyframes move-bg {

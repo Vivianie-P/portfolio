@@ -1,11 +1,17 @@
 import React from "react";
 import "./Projects.css";
 
-const Projects = () => {
+const Projects = (props) => {
 	return (
 		<div className="projects-main" id="projects">
 			<div className="projects-title-container">
-				<h1 className="projects-title">Projects</h1>
+				<h1
+					className={
+						props.currTheme === "dark" ? "projects-title" : "projects-title-light"
+					}
+				>
+					Projects
+				</h1>
 			</div>
 			<div className="underline"></div>
 			<div className="projects-container">
