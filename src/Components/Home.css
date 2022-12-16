@@ -20,10 +20,26 @@
 	margin: 0;
 
 	--bg-size: 400%;
-	background: radial-gradient(
+	/* background: radial-gradient(
 			circle,
 			rgba(68, 69, 70, 1) 0%,
 			rgba(192, 151, 111, 1) 100%
+		)
+		0 0 / 400% 100%; */
+	/* background: linear-gradient(
+			43deg,
+			rgba(175, 118, 63, 1) 0%,
+			rgba(218, 184, 138, 1) 30%,
+			rgba(156, 107, 93, 1) 50%,
+			rgba(218, 184, 138, 1) 70%,
+			rgba(175, 118, 63, 1) 100%
+		)
+		0 0 / 400% 100%; */
+
+	background: linear-gradient(
+			90deg,
+			rgba(192, 151, 111, 1) 0%,
+			rgba(125, 84, 72, 1) 100%
 		)
 		0 0 / 400% 100%;
 	-webkit-text-fill-color: transparent;
@@ -47,7 +63,13 @@
 
 .underline {
 	--bg-size: 400%;
-	background: linear-gradient(
+	background: radial-gradient(
+			circle,
+			rgba(68, 69, 70, 1) 0%,
+			rgba(192, 151, 111, 1) 100%
+		)
+		0 0 / 400% 100%;
+	/* background: linear-gradient(
 			43deg,
 			rgba(175, 118, 63, 1) 0%,
 			rgba(218, 184, 138, 1) 30%,
@@ -55,7 +77,7 @@
 			rgba(218, 184, 138, 1) 70%,
 			rgba(175, 118, 63, 1) 100%
 		)
-		0 0 / 400% 100%;
+		0 0 / 400% 100%; */
 	-webkit-text-fill-color: transparent;
 	animation: move-bg 30s infinite linear;
 	height: 5px;
