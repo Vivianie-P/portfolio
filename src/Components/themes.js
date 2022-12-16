@@ -68,4 +68,10 @@ export const GlobalStyles = createGlobalStyle`
 			background-color: ${(props) => props.theme.projectBkgrdColor};
 		}
 	}
+
+	@media screen and (max-width: 2000px) and (orientation: landscape) {
+		.project-details {
+			background-color: ${(props) => props.theme.projectBkgrdColor};
+		}
+	}
 `;

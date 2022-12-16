@@ -59,7 +59,7 @@
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: portrait) {
 	.footer-main {
 		padding: 0;
 		width: 35%;
@@ -72,6 +72,12 @@
 
 	.sentence-container,
 	.sentence {
+		display: none;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.line {
 		display: none;
 	}
 }

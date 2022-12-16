@@ -126,7 +126,7 @@
 	margin: 0.5rem 0rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: portrait) {
 	.hamburger {
 		display: none;
 	}
@@ -178,5 +178,33 @@
 	.light-dark svg {
 		width: 28px;
 		height: 28px;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.desktop-header {
+		display: none;
+	}
+
+	.mobile-header {
+		display: flex;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.menu-items {
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	.menu-items-list {
+		width: 40%;
+		height: 35vh;
+	}
+
+	.light-dark {
+		margin: 0;
 	}
 }

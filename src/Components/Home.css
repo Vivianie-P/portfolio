@@ -69,7 +69,13 @@
 	max-width: 550px;
 }
 
-@media screen and (min-width: 800px) {
+@keyframes move-bg {
+	to {
+		background-position: var(--bg-size) 0;
+	}
+}
+
+@media screen and (min-width: 800px) and (orientation: portrait) {
 	.home-title,
 	.home-title-light {
 		font-size: 6.5rem;
@@ -87,8 +93,13 @@
 	}
 }
 
-@keyframes move-bg {
-	to {
-		background-position: var(--bg-size) 0;
+@media screen and (orientation: landscape) {
+	.home-title,
+	.home-title-light {
+		font-size: 3.2rem;
+	}
+
+	.home-ppg {
+		font-size: 1.8rem;
 	}
 }

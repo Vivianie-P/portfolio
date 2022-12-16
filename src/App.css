@@ -107,7 +107,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
 	.logo {
 		--bg-size: 400%;
 		background: radial-gradient(
@@ -146,5 +146,43 @@ body {
 		margin: 0px auto;
 		padding: 50px 10px 10px;
 		max-width: 1000px;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.App {
+		overflow-x: hidden;
+	}
+
+	.desktop-footer {
+		display: none;
+	}
+
+	.side-menu {
+		display: none;
+	}
+
+	.right-side-menu {
+		display: none;
+	}
+
+	.mobile-footer {
+		display: flex;
+	}
+
+	.logo {
+		--bg-size: 400%;
+		background: radial-gradient(
+				circle,
+				rgba(68, 69, 70, 1) 0%,
+				rgba(192, 151, 111, 1) 100%
+			)
+			0 0 / 400% 100%;
+		background-size: 400%;
+		background-repeat: repeat;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: move-bg 30s infinite linear;
 	}
 }

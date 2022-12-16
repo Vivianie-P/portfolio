@@ -110,7 +110,7 @@
 	transform: scale(1.1);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
 	.card {
 		max-width: 550px;
 	}
@@ -120,7 +120,7 @@
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: portrait) {
 	.projects-main {
 		width: 100%;
 		display: flex;

@@ -101,7 +101,7 @@
 	display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (orientation: portrait) {
 	.contact-me-container {
 		height: 50vh;
 	}
@@ -137,5 +137,15 @@
 		font-weight: 400;
 		font-size: 1.8rem;
 		margin-top: 3rem;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.contact-me-container {
+		margin-bottom: 0;
+	}
+
+	.mailto {
+		width: 35%;
 	}
 }
