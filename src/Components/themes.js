@@ -9,7 +9,7 @@ export const lightTheme = {
 	backgroundColor: "#ead8c0",
 	projectBkgrdColor: "#c99460ba",
 	projectFont: "#533127",
-	cardBtn: "#311c16",
+	cardBtn: "#802d16",
 	cardTitle: "#311c16",
 };
 
@@ -22,7 +22,7 @@ export const darkTheme = {
 	backgroundColor: "#292c30",
 	projectBkgrdColor: "#7f5832d6",
 	projectFont: "#f5debd",
-	cardBtn: "#f1e3cf",
+	cardBtn: "#c08e47",
 	cardTitle: "#f1e3cf",
 };
 
@@ -59,6 +59,9 @@ export const GlobalStyles = createGlobalStyle`
 		color:${(props) => props.theme.projectFont};
 	}
 
+	.card__btn{
+		fill:${(props) => props.theme.cardBtn};
+	}
 
 	@media screen and (max-width: 799px) {
 		.project-details {
