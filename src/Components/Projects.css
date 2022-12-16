@@ -9,13 +9,11 @@
 	font-weight: 400;
 	margin: 0;
 	--bg-size: 400%;
-	background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(218, 184, 138, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(218, 184, 138, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
+	background: radial-gradient(
+			circle,
+			rgba(241, 227, 207, 1) 0%,
+			rgba(238, 186, 135, 1) 50%,
+			rgba(149, 84, 65, 1) 100%
 		)
 		0 0 / 400% 100%;
 	-webkit-text-fill-color: transparent;
@@ -27,12 +25,10 @@
 
 .projects-title-light {
 	background: radial-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(218, 184, 138, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(218, 184, 138, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
+			circle,
+			rgba(192, 151, 111, 1) 0%,
+			rgba(128, 82, 68, 1) 50%,
+			rgba(47, 51, 56, 1) 100%
 		)
 		0 0 / 400% 100%;
 
@@ -104,10 +100,11 @@
 }
 
 .card__btn {
-	height: 1.6rem;
+	height: 1.8rem;
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
+	fill: #f1e3cf;
 }
 
 .card__btn:hover {
@@ -116,7 +113,6 @@
 
 @media screen and (max-width: 800px) {
 	.card {
-		/* height: 220px; */
 		max-width: 550px;
 	}
 
@@ -136,7 +132,6 @@
 	.projects-title,
 	.projects-title-light {
 		font-size: 5rem;
-		margin-bottom: 5rem;
 	}
 
 	.projects-container {
@@ -146,9 +141,8 @@
 	}
 
 	.project-details {
-		padding: 0 2rem;
+		padding: 0 2rem 0 0;
 		height: 100%;
-		/* justify-content: center; */
 	}
 
 	.card {
@@ -156,6 +150,9 @@
 		height: 285px;
 	}
 
+	.card:nth-child(even) .project-details {
+		padding: 0 0 0 2rem;
+	}
 	.card:nth-child(even) {
 		flex-direction: row-reverse;
 	}
@@ -186,7 +183,6 @@
 	.card-inner-info {
 		display: flex;
 		justify-content: center;
-		gap: 2rem;
 		flex-direction: column;
 		width: 60%;
 		float: left;
@@ -197,7 +193,7 @@
 		font-size: 2rem;
 	}
 
-	/* .card__btn {
-		font-size: 2rem;
-	} */
+	.card__btn {
+		height: 2.2rem;
+	}
 }

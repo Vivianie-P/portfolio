@@ -21,13 +21,11 @@
 	font-family: "Shrikhand", cursive;
 	font-weight: 400;
 	--bg-size: 400%;
-	background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(218, 184, 138, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(218, 184, 138, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
+	background: radial-gradient(
+			circle,
+			rgba(241, 227, 207, 1) 0%,
+			rgba(238, 186, 135, 1) 50%,
+			rgba(149, 84, 65, 1) 100%
 		)
 		0 0 / 400% 100%;
 	-webkit-text-fill-color: transparent;
@@ -38,13 +36,11 @@
 }
 
 .aboutme-title-light {
-	background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(218, 184, 138, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(218, 184, 138, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
+	background: radial-gradient(
+			circle,
+			rgba(192, 151, 111, 1) 0%,
+			rgba(128, 82, 68, 1) 50%,
+			rgba(47, 51, 56, 1) 100%
 		)
 		0 0 / 400% 100%;
 

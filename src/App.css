@@ -8,15 +8,6 @@ body {
 	width: 100vw;
 	overflow: hidden;
 	overflow-y: scroll;
-
-	/* border: 6px solid;
-	border-image-source: linear-gradient(
-		43deg,
-		rgba(93, 69, 62, 1) 25%,
-		rgba(180, 106, 85, 1) 57%,
-		rgba(170, 134, 99, 1) 74%
-	);
-	border-image-slice: 1; */
 	overflow-x: hidden;
 }
 
@@ -125,15 +116,6 @@ body {
 				rgba(192, 151, 111, 1) 100%
 			)
 			0 0 / 400% 100%;
-		/* background: linear-gradient(
-				43deg,
-				rgba(175, 118, 63, 1) 0%,
-				rgba(218, 184, 138, 1) 30%,
-				rgba(156, 107, 93, 1) 50%,
-				rgba(218, 184, 138, 1) 70%,
-				rgba(175, 118, 63, 1) 100%
-			)
-			0 0 / 400% 100%; */
 		background-size: 400%;
 		background-repeat: repeat;
 		background-clip: text;

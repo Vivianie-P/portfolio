@@ -59,9 +59,6 @@ export const GlobalStyles = createGlobalStyle`
 		color:${(props) => props.theme.projectFont};
 	}
 
-	.card__btn{
-		fill:${(props) => props.theme.cardBtn};
-	}
 
 	@media screen and (max-width: 799px) {
 		.project-details {
