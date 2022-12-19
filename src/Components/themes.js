@@ -4,7 +4,6 @@ export const lightTheme = {
 	body: "#f1e3cf",
 	fontColor: "#533127",
 	filledColor: "#533127",
-	fontText: "#2f3338",
 	scrollBar: "#2f3338",
 	backgroundColor: "#ead8c0",
 	projectBkgrdColor: "#c99460ba",
@@ -17,7 +16,6 @@ export const darkTheme = {
 	body: "#2f3338",
 	fontColor: "#c0976f",
 	filledColor: "#c0976f",
-	fontText: "#f1e3cf",
 	scrollBar: "#f1e3cf",
 	backgroundColor: "#292c30",
 	projectBkgrdColor: "#7f5832d6",
@@ -30,10 +28,6 @@ export const GlobalStyles = createGlobalStyle`
 	body {
 		background-color: ${(props) => props.theme.body};
 	}
-
-	// .home-title {
-	// 	background:${(props) => props.theme.fontText}
-	// }
 
 	*::-webkit-scrollbar-thumb{
 		background-color:${(props) => props.theme.scrollBar} 
@@ -63,13 +57,13 @@ export const GlobalStyles = createGlobalStyle`
 		fill:${(props) => props.theme.cardBtn};
 	}
 
-	@media screen and (max-width: 799px) {
+	@media screen and (max-width: 950px) {
 		.project-details {
 			background-color: ${(props) => props.theme.projectBkgrdColor};
 		}
 	}
 
-	@media screen and (max-width: 2000px) and (orientation: landscape) {
+	@media screen and (max-width: 1000px) and (orientation: landscape) {
 		.project-details {
 			background-color: ${(props) => props.theme.projectBkgrdColor};
 		}

@@ -53,13 +53,23 @@
 	margin-top: 1.6rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
+	.contact-me-container {
+		margin-bottom: 0px;
+	}
+
 	.line {
 		display: none;
 	}
 }
 
-@media screen and (min-width: 800px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (max-width: 920px) and (orientation: landscape) {
+	.line {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 950px) {
 	.footer-main {
 		padding: 0;
 		width: 35%;
@@ -67,17 +77,11 @@
 
 	.footer-container {
 		flex-direction: column;
-		height: 12vh;
+		margin-bottom: 1rem;
 	}
 
 	.sentence-container,
 	.sentence {
-		display: none;
-	}
-}
-
-@media screen and (orientation: landscape) {
-	.line {
 		display: none;
 	}
 }

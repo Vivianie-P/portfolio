@@ -75,7 +75,7 @@
 	}
 }
 
-@media screen and (min-width: 800px) and (orientation: portrait) {
+@media screen and (min-width: 950px) {
 	.home-title,
 	.home-title-light {
 		font-size: 6.5rem;
@@ -84,7 +84,7 @@
 	.home-ppg {
 		width: 70%;
 		flex-wrap: wrap;
-		font-size: 3.2rem;
+		font-size: 2.6rem;
 	}
 
 	.underline {
@@ -93,7 +93,7 @@
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 920px) and (orientation: landscape) {
 	.home-title,
 	.home-title-light {
 		font-size: 3.2rem;

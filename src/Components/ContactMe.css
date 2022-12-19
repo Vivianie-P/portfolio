@@ -36,15 +36,6 @@
 }
 
 .contact-me-title-light {
-	/* background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(218, 184, 138, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(218, 184, 138, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
-		)
-		0 0 / 400% 100%; */
 	background: radial-gradient(
 			circle,
 			rgba(192, 151, 111, 1) 0%,
@@ -101,11 +92,22 @@
 	display: none;
 }
 
-@media screen and (min-width: 800px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (max-width: 920px) and (orientation: landscape) {
 	.contact-me-container {
-		height: 50vh;
+		margin-bottom: 0;
+		margin-top: 10rem;
 	}
 
+	.inner-container {
+		height: 15rem;
+	}
+
+	.mailto {
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 950px) {
 	.contact-me-title,
 	.contact-me-title-light {
 		font-size: 5rem;
@@ -137,16 +139,5 @@
 		font-weight: 400;
 		font-size: 1.8rem;
 		margin-top: 3rem;
-	}
-}
-
-@media screen and (orientation: landscape) {
-	.contact-me-container {
-		margin-bottom: 0;
-		margin-top: 10rem;
-	}
-
-	.mailto {
-		width: 35%;
 	}
 }

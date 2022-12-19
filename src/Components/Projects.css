@@ -110,7 +110,7 @@
 	transform: scale(1.1);
 }
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
+@media screen and (max-width: 800px) {
 	.card {
 		max-width: 550px;
 	}
@@ -120,7 +120,7 @@
 	}
 }
 
-@media screen and (min-width: 800px) and (orientation: portrait) {
+@media screen and (min-width: 950px) {
 	.projects-main {
 		width: 100%;
 		display: flex;
@@ -197,8 +197,13 @@
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 920px) and (orientation: landscape) {
 	.projects-main {
 		margin-top: 10rem;
+	}
+
+	.projects-title,
+	.projects-title-light {
+		font-size: 3.5rem;
 	}
 }

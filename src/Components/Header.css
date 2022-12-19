@@ -1,7 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500&family=Shrikhand&family=Varela+Round&display=swap");
 
+.header-main {
+	width: 100%;
+}
+
 .desktop-header {
 	display: none;
+}
+
+.logo {
+	height: 35px;
+	width: 45px;
+	margin: 0;
+	padding: 0;
+	font-family: "Shrikhand", cursive;
+	font-weight: 400;
+	font-size: 2.8rem;
+	text-decoration: none;
+	background: none;
+	border: none;
+}
+
+.logo:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
 
 .mobile-header {
@@ -100,15 +122,6 @@
 			rgba(192, 151, 111, 1) 100%
 		)
 		0 0 / 400% 100%;
-	/* background: linear-gradient(
-			43deg,
-			rgba(175, 118, 63, 1) 0%,
-			rgba(218, 184, 138, 1) 30%,
-			rgba(156, 107, 93, 1) 50%,
-			rgba(218, 184, 138, 1) 70%,
-			rgba(175, 118, 63, 1) 100%
-		)
-		0 0 / 400% 100%; */
 	background-size: 400%;
 	background-repeat: repeat;
 	background-clip: text;
@@ -126,7 +139,31 @@
 	margin: 0.5rem 0rem;
 }
 
-@media screen and (min-width: 800px) and (orientation: portrait) {
+@media screen and (max-width: 800px) {
+	.logo {
+		--bg-size: 400%;
+		background: radial-gradient(
+				circle,
+				rgba(68, 69, 70, 1) 0%,
+				rgba(192, 151, 111, 1) 100%
+			)
+			0 0 / 400% 100%;
+		background-size: 400%;
+		background-repeat: repeat;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: move-bg 30s infinite linear;
+	}
+
+	@keyframes move-bg {
+		to {
+			background-position: var(--bg-size) 0;
+		}
+	}
+}
+
+@media screen and (min-width: 950px) {
 	.hamburger {
 		display: none;
 	}
@@ -181,7 +218,7 @@
 	}
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 920px) and (orientation: landscape) {
 	.desktop-header {
 		display: none;
 	}
@@ -196,7 +233,7 @@
 
 	.menu-items {
 		flex-direction: column;
-		gap: 3.5rem;
+		gap: 2rem;
 	}
 
 	.menu-items-list {
@@ -204,7 +241,24 @@
 		height: 35vh;
 	}
 
+	.logo {
+		--bg-size: 400%;
+		background: radial-gradient(
+				circle,
+				rgba(68, 69, 70, 1) 0%,
+				rgba(192, 151, 111, 1) 100%
+			)
+			0 0 / 400% 100%;
+		background-size: 400%;
+		background-repeat: repeat;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: move-bg 30s infinite linear;
+	}
+
 	.light-dark {
 		margin: 0;
+		height: 8vh;
 	}
 }

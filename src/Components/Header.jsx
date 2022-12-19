@@ -1,12 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faBarsStaggered,
-	faMoon,
-	faSun,
-	faX,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 const Header = React.forwardRef((props) => {
 	const [showNavMenu, setShowNavMenu] = useState(false);
@@ -52,10 +47,8 @@ const Header = React.forwardRef((props) => {
 				</button>
 				<button to="#" className="hamburger">
 					{showNavMenu ? (
-						// <FontAwesomeIcon icon={faX} onClick={toggleNavMenu} />
 						<span onClick={toggleNavMenu}> {">"} </span>
 					) : (
-						// <FontAwesomeIcon icon={faBarsStaggered} onClick={toggleNavMenu} />
 						<span onClick={toggleNavMenu}> {"<"} </span>
 					)}
 				</button>
