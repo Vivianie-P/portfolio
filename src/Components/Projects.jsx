@@ -31,7 +31,7 @@ const Projects = (props) => {
 
 				<Card
 					title="To Do App"
-					description="This a To Do app that helps with creating, adding, deleting, and crossing out to do's. Anyone can use this app to stay on track of their tasks.  "
+					description="This is a To Do app that helps with creating, adding, deleting, and crossing out to do's. Anyone can use this app to stay on track of their tasks.  "
 					img={require("./to-do.jpg")}
 					gitLink="https://github.com/Vivianie-P/to-do-app"
 				/>
