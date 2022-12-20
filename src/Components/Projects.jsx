@@ -41,9 +41,6 @@ const Projects = (props) => {
 };
 
 function Card(props) {
-	const openInNewTab = (url) => {
-		window.open(url, "_blank", "noopener, noreferrer");
-	};
 	return (
 		<div className="card">
 			<div className="card-inner-info">
