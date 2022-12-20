@@ -36,7 +36,15 @@ function App() {
 	};
 
 	useEffect(() => {
+		const themeBackgroundColors = {
+			light: "#ead8c0",
+			dark: "#292c30",
+		};
+
 		localStorage.setItem("theme", theme);
+		document
+			.querySelector('meta[name="theme-color"]')
+			.setAttribute("content", themeBackgroundColors[theme]);
 	});
 
 	return (
