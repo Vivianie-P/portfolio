@@ -10,10 +10,10 @@ This is my personal portflio website that showcases my pervious projects as well
 
 ### Built With
 
-React
+# React
 
-JavaScript
+# JavaScript
 
-CSS
+# CSS
 
 
