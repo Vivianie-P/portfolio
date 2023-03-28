@@ -9,8 +9,11 @@
 This is my personal portflio website that showcases my pervious projects as well as my skills with Frontend tools and languages. 
 
 ### Built With
-React
-JavaScript
-CSS
+
+- React
+
+- JavaScript
+
+- CSS
 
 
