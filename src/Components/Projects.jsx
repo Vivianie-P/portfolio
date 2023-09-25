@@ -16,24 +16,24 @@ const Projects = (props) => {
 			<div className="underline"></div>
 			<div className="projects-container">
 				<Card
+					title="Age Calculator"
+					description="Implemented a user-friendly age calculator application allowing users to input a date and instantly see the age in years, months, and days, with robust validation checks and responsive design for seamless accessibility."
+					img={require("./age.jpg")}
+					gitLink="https://vivianie-p.github.io/age-calc-fm/"
+				/>
+
+				<Card
+					title="Country Search"
+					description="Developed an intuitive Country Searcher app with a visually appealing interface, enabling seamless browsing and enhanced user experience through advanced features like region-based filtering and color scheme toggling."
+					img={require("./country.jpg")}
+					gitLink="https://vivianie-p.github.io/Countries/#"
+				/>
+
+				<Card
 					title="Shortly"
-					description="Shortly is a URL shortening app that takes in the user's external URL link and shortens the link. It allows the user to delete old URL links and keep the ones they would like. "
+					description="Created a streamlined URL shortener app using React, JavaScript, and CSS, seamlessly integrating the Shortly API for one-click URL shortening, boosting user accessibility"
 					img={require("./URL.jpg")}
 					gitLink="https://github.com/Vivianie-P/URL-Project"
-				/>
-
-				<Card
-					title="Sunnyside"
-					description="Sunnyside is a landing page for a full-service creative agency that specializes in helping brands grow. I created this website using the frontend tools I know."
-					img={require("./sunnyside-lp.jpg")}
-					gitLink="https://github.com/Vivianie-P/sunnyside-lp"
-				/>
-
-				<Card
-					title="To Do App"
-					description="This a To Do app that helps with creating, adding, deleting, and crossing out to do's. Anyone can use this app to stay on track of their tasks.  "
-					img={require("./to-do.jpg")}
-					gitLink="https://github.com/Vivianie-P/to-do-app"
 				/>
 			</div>
 		</div>
