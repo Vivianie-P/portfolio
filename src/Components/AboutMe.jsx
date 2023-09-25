@@ -48,6 +48,15 @@ function AboutMe(props) {
 				<div className="skills__skill">
 					<h2>GIT</h2>
 				</div>
+				<div className="skills__skill">
+					<h2>Typescript</h2>
+				</div>
+				<div className="skills__skill">
+					<h2>Tailwind CSS</h2>
+				</div>
+				<div className="skills__skill">
+					<h2>Vite</h2>
+				</div>
 			</div>
 		</div>
 	);
